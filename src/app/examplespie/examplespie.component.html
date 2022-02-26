@@ -1,0 +1,100 @@
+<div fxLayout="row wrap" fxLayoutGap="10px">
+    <div fxFlex="44.0" >
+  <mat-card class="example-card" style="margin-bottom: 16px; height: 400px;">
+      <mat-card-title>
+          
+            <div class="row">
+                <h1>Pie Chart</h1>
+              </div>
+              <ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [tooltip]="tooltip"
+              [title]="title" (load)='load($event)' height="350">
+                <e-accumulation-series-collection>
+                    <e-accumulation-series [dataSource]='chartData' xName='y1' yName='y2'  type='Pie' [dataLabel]= 'legendSettings'></e-accumulation-series>
+                </e-accumulation-series-collection>
+            </ejs-accumulationchart>
+         
+          <div class="row">
+            <div class="column">
+        </div>
+      </div>
+
+    </mat-card-title>
+    </mat-card>
+</div>
+
+
+<div fxFlex="44.0" >
+  <mat-card class="example-card" style="margin-bottom: 16px; height: 400px;">
+      <mat-card-title>
+          
+            <div class="row">
+                <h1>Donut chart</h1>
+              </div>
+
+              <ejs-accumulationchart id="container" #pie style='display:block;  width: 92%' [legendSettings]="legendSettings" [tooltip]="tooltip"
+              [title]="title" (load)='load($event)' height="350">
+              <e-accumulation-series-collection>
+                  <e-accumulation-series name='Project' [dataSource]='chartData' xName='y1' yName='y2' [startAngle]="startAngle" [endAngle]="endAngle" innerRadius="40%"
+                      radius="70%" [dataLabel]="dataLabel" explode=true explodeOffset='10%' [explodeIndex]='3'>
+                  </e-accumulation-series>
+              </e-accumulation-series-collection>
+          </ejs-accumulationchart>
+          
+          <div class="row">
+            <div class="column">
+        </div>
+      </div>
+
+    </mat-card-title>
+    </mat-card>
+</div>
+
+
+<div fxFlex="44.0" >
+    <mat-card class="example-card" style="margin-bottom: 16px; height: 400px;">
+        <mat-card-title>
+            
+              <div class="row">
+                  <h1>Smart Lables</h1>
+                </div>
+                <ejs-accumulationchart id='container3' style='display:block; width: 92%' [legendSettings]="legendSettings1" [tooltip]="tooltip1" [title]="title" (load)='onLoad($event)' height="350">
+                  <e-accumulation-series-collection>
+                      <e-accumulation-series name='RIO' [dataSource]='chartData' xName='y1' yName='y2' [startAngle]="startAngle1" innerRadius="0%" [dataLabel]="dataLabel1"> </e-accumulation-series>
+                  </e-accumulation-series-collection>
+              </ejs-accumulationchart>
+            
+            <div class="row">
+              <div class="column">
+          </div>
+        </div>
+  
+      </mat-card-title>
+      </mat-card>
+  </div>
+  
+
+  <div fxFlex="44.0" >
+    <mat-card class="example-card" style="margin-bottom: 16px; height: 400px;">
+        <mat-card-title>
+            
+              <div class="row">
+                  <h1>Semi Pie</h1>
+                </div>
+  
+                <ejs-accumulationchart id='container6' style='display:block; width: 92%' [legendSettings]="legendSettings2" [tooltip]="tooltip2"  (load)='load2($event)' [enableAnimation]="enableAnimation2" height="350">
+                  <e-accumulation-series-collection>
+                      <e-accumulation-series [dataSource]='chartData' xName='y1' yName='y2' [startAngle]="startAngle2" [endAngle]="endAngle2" innerRadius="40%" radius="90%" [explode]="explode2" [dataLabel]="dataLabel2" >
+                      </e-accumulation-series>
+                  </e-accumulation-series-collection>
+              </ejs-accumulationchart>
+
+            <div class="row">
+              <div class="column">
+          </div>
+        </div>
+  
+      </mat-card-title>
+      </mat-card>
+  </div>
+  </div>
+  

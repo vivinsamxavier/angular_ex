@@ -1,0 +1,19 @@
+.column {
+    float: left;
+    width: 31.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .letter{
+    font-size: 16px;
+  }
+  .example-card{
+      margin-bottom: 15px;
+      border: 3px solid #2d8b08d5;
+      margin-left: 15px;
+  }

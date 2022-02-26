@@ -1,0 +1,10 @@
+<div class="container">
+<ejs-grid [dataSource]='data' [searchSettings]='searchSettings' [toolbar]='toolbar' gridLines="Both" [allowPaging]='true' height='268px' [pageSettings]='pageSettings' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption1'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='Left' width=100></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+        <e-column field='Price' headerText='Price' textAlign='Left' format='C2' width=100></e-column>
+        <e-column field='OrderDate' headerText='Order Date' textAlign='Left' format='yMd' width=100></e-column>
+    </e-columns>
+    </ejs-grid>
+</div>
