@@ -1,0 +1,150 @@
+<div fxLayout="row wrap" fxLayoutGap="5px">
+<mat-card class="example-card">
+    <mat-card-header>
+      <div class="color1">
+        EFFICIENCY
+        </div>
+    </mat-card-header>
+    
+    <mat-card-content>
+     
+    </mat-card-content>
+  
+  </mat-card> 
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="color1">
+        UTILIZATION
+        </div>
+    </mat-card-header>
+    
+    <mat-card-content>
+     
+    </mat-card-content>
+  
+  </mat-card>
+
+
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="color1">
+        OPERATOR
+        </div>
+    </mat-card-header>
+    
+    <mat-card-content>
+     
+    </mat-card-content>
+  
+  </mat-card>
+
+
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="color1">
+        PRODUCTION
+        </div>
+    </mat-card-header>
+    
+    <mat-card-content>
+     
+    </mat-card-content>
+  
+  </mat-card>
+
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="color1">
+        STOPPAGE
+        </div>
+    </mat-card-header>
+    
+    <mat-card-content>
+     
+    </mat-card-content>
+  
+  </mat-card>
+
+</div>
+
+<div>
+
+
+    <div fxLayout="row wrap" fxLayoutGap="10">
+        <div fxFlex="20" >
+      <mat-card class="example-card" style="margin-bottom: 16px; height: 400px; width: 300px;">
+          <mat-card-title>
+              
+                <div class="row">
+                  <div class="color">
+                    <h1>Column chart</h1>
+                    </div>
+                  </div>
+    
+              <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+                   [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea'  height="350"  style="width: 300px;">
+                  <e-series-collection>
+                      <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1' width="3" fill="orange" ></e-series>
+                      <e-series [dataSource]='chartData' type='Column' xName='month' yName='y2' name='Y2' width="5" fill="red"></e-series>
+                  </e-series-collection>
+              </ejs-chart>
+    
+              <div class="row">
+                <div class="column">
+            </div>
+          </div>
+    
+        </mat-card-title>
+        </mat-card>
+    </div>   
+</div>
+<div fxFlex="20" >
+  <mat-card class="example-card" style="margin-bottom: 16px;  height: 400px; width: 300px;" >
+      <mat-card-title>
+          
+            <div class="row">
+              <div class="color">
+                <h1 >Line chart</h1>
+              </div>
+              </div>
+
+              <ejs-chart id="chart-container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+              [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350" style="width: 300px;">
+             <e-series-collection>
+                 <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1'  width="3" fill="Violet"></e-series>
+                 <e-series [dataSource]='chartData' type='Line' xName='month' yName='y2' name='Y2' width="5" fill="DodgerBlue"></e-series>
+             </e-series-collection>
+         </ejs-chart>
+
+          
+          <div class="row">
+            <div class="column">
+        </div>
+      </div>
+
+    </mat-card-title>
+    </mat-card>
+</div>
+
+<div>
+  <div fxFlex="20" >
+    <mat-card class="example-card" style="margin-bottom: 16px;  height: 400px; width: 300px;" >
+        <mat-card-title>
+            
+              <div class="row">
+                <div class="color">
+                  <h1 >Area chart</h1>
+                </div>
+                </div>
+  
+            
+          
+      </mat-card-title>
+      </mat-card>
+  </div>
+</div> 
+</div>

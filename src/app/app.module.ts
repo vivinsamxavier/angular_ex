@@ -26,8 +26,12 @@ import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
 import { ExamplesgirdComponent } from './examplesgird/examplesgird.component';
 import { MultilineComponent } from './multiline/multiline.component';
-   
-
+import { ScreencardComponent } from './screencard/screencard.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ScreentwoComponent } from './screentwo/screentwo.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
 
 
 
@@ -40,7 +44,9 @@ import { MultilineComponent } from './multiline/multiline.component';
     ExampleschartsComponent,
     ExamplespieComponent,
     ExamplesgirdComponent,
-    MultilineComponent
+    MultilineComponent,
+    ScreencardComponent,
+    ScreentwoComponent
   ],
   imports: [
     BrowserModule,
@@ -56,10 +62,17 @@ import { MultilineComponent } from './multiline/multiline.component';
     MatDividerModule,
     MatIconModule,
     ChartModule,
-    AccumulationChartModule
-  ],
+    AccumulationChartModule,
+    MatProgressSpinnerModule,
+    MatButtonToggleModule,
+    MatChipsModule,
+    ProgressBarModule,
+    
+    
+  ],    
+    
   providers: [ CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService,AreaSeriesService,ColumnSeriesService,StackingColumnSeriesService,PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService,
-    AccumulationAnnotationService,SearchService, ToolbarService, EditService,FilterService ],
+    AccumulationAnnotationService,SearchService, ToolbarService, EditService,FilterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,479 @@
+<div class="search" >
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Search</mat-label>
+      <input matInput placeholder="Search" value="">
+    </mat-form-field>  &nbsp; &nbsp; &nbsp;
+ 
+  <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="red">Run</mat-button-toggle>
+      <mat-button-toggle value="green">Off</mat-button-toggle>
+      <mat-button-toggle value="blue">Idel</mat-button-toggle>
+      <mat-button-toggle value="blue">All</mat-button-toggle>
+    </mat-button-toggle-group>
+  
+  </div> 
+
+<div fxLayout="row wrap" fxLayoutGap="10px">
+  <!-- #card1: -->
+  <div fxFlex="45" >
+        
+    <mat-card class="card" >
+    <mat-card-title>
+ 
+       <h4 class="h1">TT_ROWWASH_1</h4> 
+ 
+       <div class="chip">
+       <mat-chip-list > 
+             <mat-chip style="background-color: green;" selected>Running</mat-chip>
+             <div class="preview">
+             <mat-icon aria-hidden="true" aria-label="Example preview icon">preview</mat-icon>
+           </div>
+            <div class="settings">
+             <mat-icon aria-hidden="true" aria-label="Example settings icon">settings</mat-icon>
+           </div>
+       </mat-chip-list>
+     </div>
+ 
+    </mat-card-title>   
+    <mat-card-header>
+       <mat-divider [inset]="true"></mat-divider>
+    </mat-card-header> 
+ 
+    <mat-card-content>
+ 
+     <div fxLayout="row " >
+       <div fxFlex="30" >
+ 
+         <p class="div">
+           Date:100%
+           <br><div class="store">Stoppage:2h 2m</div>
+           
+         </p>
+ 
+         <div >
+     
+
+         
+         <ejs-progressbar  id='buffer' type='Circular' height='120' value=80  secondaryProgress=60 trackThickness=15  progressThickness=15 
+        progressColor='#008000' trackColor='#D5F5E3' [showProgressValue]='showProgressValue' [animation]='animation'>
+        
+          </ejs-progressbar>
+      
+
+           
+         </div>
+ 
+         <p class="div1">
+           Today Production:<br><div class="div3">30,663.9 Kgs</div>
+           <br>
+           MTD Production:<br><div class="div3">15,80,450 Kgs</div>
+         </p>
+         </div> 
+         
+       <div fxFlex="70"  >
+      
+       <div class="row">
+       <div fxFlex="50">
+           
+         <p class="text">
+           001 PLC STATUS:<br><div class="value"><br>
+             1
+           
+           </div>
+         </p>
+         <br><br>
+
+           <div class="sec">
+           003 Reaction Chamber steam <br>Temp Actc degc:<br><div class="value">52</div>
+           <br>
+          </div>
+
+           <div class="tag">
+           005 Chemical lilet 2l/h:<div class="value">10008</div>
+           </div>
+        
+
+           </div>
+           
+       <div fxFlex="50">
+         
+        
+
+         <p class="text1">
+           002 Reaction chamber<br>Temp set degc:<br><div class="value">55</div>
+           <br>
+
+           <div class="tag2"><br>
+           004  Chemical Water Inlet 1/h:<br><div class="value"><br>520</div>
+         </div>
+
+           <br><br>
+
+           <div class="tag1">
+           006 Chemical Posing 1l/Kg:<br><div class="value">3.5</div>
+         </div>
+         
+
+      </div>
+      </div>
+      </div>
+      </div>
+      </mat-card-content>
+      </mat-card>
+      </div>
+ 
+    
+
+
+
+      <div fxFlex="45" >
+        
+        <mat-card class="card" >
+        <mat-card-title>
+     
+           <h4 class="h1">TT_ROWWASH_1</h4> 
+     
+           <div class="chip">
+           <mat-chip-list > 
+                 <mat-chip style="background-color: green;" selected>Running</mat-chip>
+                 <div class="preview">
+                 <mat-icon aria-hidden="true" aria-label="Example preview icon">preview</mat-icon>
+               </div>
+                <div class="settings">
+                 <mat-icon aria-hidden="true" aria-label="Example settings icon">settings</mat-icon>
+               </div>
+           </mat-chip-list>
+         </div>
+     
+        </mat-card-title>   
+        <mat-card-header>
+           <mat-divider [inset]="true"></mat-divider>
+        </mat-card-header> 
+     
+        <mat-card-content>
+     
+         <div fxLayout="row " >
+           <div fxFlex="30" >
+     
+             <p class="div">
+               Date:100%
+               <br><div class="store">Stoppage:2h 2m</div>
+               
+             </p>
+     
+             <div >
+         
+    
+             
+             <ejs-progressbar  id='buffer1' type='Circular' height='120' value=80  secondaryProgress=60 trackThickness=15  progressThickness=15 
+            progressColor='#008000' trackColor='#D5F5E3' [showProgressValue]='showProgressValue1' [animation]='animation1'>
+            
+              </ejs-progressbar>
+          
+    
+               
+             </div>
+     
+             <p class="div1">
+               Today Production:<br><div class="div3">30,663.9 Kgs</div>
+               <br>
+               MTD Production:<br><div class="div3">15,80,450 Kgs</div>
+             </p>
+             </div> 
+             
+           <div fxFlex="70"  >
+          
+           <div class="row">
+           <div fxFlex="50">
+               
+             <p class="text">
+               001 PLC STATUS:<br><div class="value"><br>
+                 1
+               
+               </div>
+             </p>
+             <br><br>
+    
+               <div class="sec">
+               003 Reaction Chamber steam <br>Temp Actc degc:<br><div class="value">52</div>
+               <br>
+              </div>
+    
+               <div class="tag">
+               005 Chemical lilet 2l/h:<div class="value">10008</div>
+               </div>
+            
+    
+               </div>
+               
+           <div fxFlex="50">
+             
+            
+    
+             <p class="text1">
+               002 Reaction chamber<br>Temp set degc:<br><div class="value">55</div>
+               <br>
+    
+               <div class="tag2"><br>
+               004  Chemical Water Inlet 1/h:<br><div class="value"><br>520</div>
+             </div>
+    
+               <br><br>
+    
+               <div class="tag1">
+               006 Chemical Posing 1l/Kg:<br><div class="value">3.5</div>
+             </div>
+             
+    
+          </div>
+          </div>
+          </div>
+          </div>
+          </mat-card-content>
+          </mat-card>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div fxFlex="45" >
+        
+            <mat-card class="card" >
+            <mat-card-title>
+         
+               <h4 class="h1">TT_ROWWASH_1</h4> 
+         
+               <div class="chip">
+               <mat-chip-list > 
+                     <mat-chip style="background-color: green;" selected>Running</mat-chip>
+                     <div class="preview">
+                     <mat-icon aria-hidden="true" aria-label="Example preview icon">preview</mat-icon>
+                   </div>
+                    <div class="settings">
+                     <mat-icon aria-hidden="true" aria-label="Example settings icon">settings</mat-icon>
+                   </div>
+               </mat-chip-list>
+             </div>
+         
+            </mat-card-title>   
+            <mat-card-header>
+               <mat-divider [inset]="true"></mat-divider>
+            </mat-card-header> 
+         
+            <mat-card-content>
+         
+             <div fxLayout="row " >
+               <div fxFlex="30" >
+         
+                 <p class="div">
+                   Date:100%
+                   <br><div class="store">Stoppage:2h 2m</div>
+                   
+                 </p>
+         
+                 <div >
+             
+        
+                 
+                 <ejs-progressbar  id='buffer2' type='Circular' height='120' value=80  secondaryProgress=60 trackThickness=15  progressThickness=15 
+                progressColor='#008000' trackColor='#D5F5E3' [showProgressValue]='showProgressValue2' [animation]='animation2'>
+                
+                  </ejs-progressbar>
+              
+        
+                   
+                 </div>
+         
+                 <p class="div1">
+                   Today Production:<br><div class="div3">30,663.9 Kgs</div>
+                   <br>
+                   MTD Production:<br><div class="div3">15,80,450 Kgs</div>
+                 </p>
+                 </div> 
+                 
+               <div fxFlex="70"  >
+              
+               <div class="row">
+               <div fxFlex="50">
+                   
+                 <p class="text">
+                   001 PLC STATUS:<br><div class="value"><br>
+                     1
+                   
+                   </div>
+                 </p>
+                 <br><br>
+        
+                   <div class="sec">
+                   003 Reaction Chamber steam <br>Temp Actc degc:<br><div class="value">52</div>
+                   <br>
+                  </div>
+        
+                   <div class="tag">
+                   005 Chemical lilet 2l/h:<div class="value">10008</div>
+                   </div>
+                
+        
+                   </div>
+                   
+               <div fxFlex="50">
+                 
+                
+        
+                 <p class="text1">
+                   002 Reaction chamber<br>Temp set degc:<br><div class="value">55</div>
+                   <br>
+        
+                   <div class="tag2"><br>
+                   004  Chemical Water Inlet 1/h:<br><div class="value"><br>520</div>
+                 </div>
+        
+                   <br><br>
+        
+                   <div class="tag1">
+                   006 Chemical Posing 1l/Kg:<br><div class="value">3.5</div>
+                 </div>
+                 
+        
+              </div>
+              </div>
+              </div>
+              </div>
+              </mat-card-content>
+              </mat-card>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+              <div fxFlex="45" >
+        
+                <mat-card class="card" >
+                <mat-card-title>
+             
+                   <h4 class="h1">TT_ROWWASH_1</h4> 
+             
+                   <div class="chip">
+                   <mat-chip-list > 
+                         <mat-chip style="background-color: green;" selected>Running</mat-chip>
+                         <div class="preview">
+                         <mat-icon aria-hidden="true" aria-label="Example preview icon">preview</mat-icon>
+                       </div>
+                        <div class="settings">
+                         <mat-icon aria-hidden="true" aria-label="Example settings icon">settings</mat-icon>
+                       </div>
+                   </mat-chip-list>
+                 </div>
+             
+                </mat-card-title>   
+                <mat-card-header>
+                   <mat-divider [inset]="true"></mat-divider>
+                </mat-card-header> 
+             
+                <mat-card-content>
+             
+                 <div fxLayout="row " >
+                   <div fxFlex="30" >
+             
+                     <p class="div">
+                       Date:100%
+                       <br><div class="store">Stoppage:2h 2m</div>
+                       
+                     </p>
+             
+                     <div >
+                 
+            
+                     
+                     <ejs-progressbar  id='buffer3' type='Circular' height='120' value=80  secondaryProgress=60 trackThickness=15  progressThickness=15 
+                    progressColor='#008000' trackColor='#D5F5E3' [showProgressValue]='showProgressValue3' [animation]='animation3'>
+                    
+                      </ejs-progressbar>
+                  
+            
+                       
+                     </div>
+             
+                     <p class="div1">
+                       Today Production:<br><div class="div3">30,663.9 Kgs</div>
+                       <br>
+                       MTD Production:<br><div class="div3">15,80,450 Kgs</div>
+                     </p>
+                     </div> 
+                     
+                   <div fxFlex="70"  >
+                  
+                   <div class="row">
+                   <div fxFlex="50">
+                       
+                     <p class="text">
+                       001 PLC STATUS:<br><div class="value"><br>
+                         1
+                       
+                       </div>
+                     </p>
+                     <br><br>
+            
+                       <div class="sec">
+                       003 Reaction Chamber steam <br>Temp Actc degc:<br><div class="value">52</div>
+                       <br>
+                      </div>
+            
+                       <div class="tag">
+                       005 Chemical lilet 2l/h:<div class="value">10008</div>
+                       </div>
+                    
+            
+                       </div>
+                       
+                   <div fxFlex="50">
+                     
+                    
+            
+                     <p class="text1">
+                       002 Reaction chamber<br>Temp set degc:<br><div class="value">55</div>
+                       <br>
+            
+                       <div class="tag2"><br>
+                       004  Chemical Water Inlet 1/h:<br><div class="value"><br>520</div>
+                     </div>
+            
+                       <br><br>
+            
+                       <div class="tag1">
+                       006 Chemical Posing 1l/Kg:<br><div class="value">3.5</div>
+                     </div>
+                     
+            
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </mat-card-content>
+                  </mat-card>
+                  </div>
+
+
+
+
+
+      
+
+          
+    
+    
+
+  
+

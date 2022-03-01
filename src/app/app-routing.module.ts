@@ -7,6 +7,8 @@ import { ExamplespieComponent } from './examplespie/examplespie.component';
 import { LoginComponent } from './login/login.component';
 import { LogintwoComponent } from './logintwo/logintwo.component';
 import { MultilineComponent } from './multiline/multiline.component';
+import { ScreencardComponent } from './screencard/screencard.component';
+import { ScreentwoComponent } from './screentwo/screentwo.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -16,7 +18,9 @@ const routes: Routes = [
   { path: 'examplescharts', component: ExampleschartsComponent },
   { path:  'examplespie',component: ExamplespieComponent },
   { path:  'examplesgird',component: ExamplesgirdComponent },
-  { path: 'multi',component:MultilineComponent }
+  { path: 'multi',component:MultilineComponent },
+  { path:'screen',component:ScreencardComponent },
+  {path:'screentwo',component:ScreentwoComponent}
 
 ];
 
