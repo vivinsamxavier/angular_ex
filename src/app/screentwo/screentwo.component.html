@@ -1,150 +1,282 @@
-<div fxLayout="row wrap" fxLayoutGap="5px">
-<mat-card class="example-card">
-    <mat-card-header>
-      <div class="color1">
-        EFFICIENCY
-        </div>
-    </mat-card-header>
-    
-    <mat-card-content>
-     
-    </mat-card-content>
+<div class="firstcol">
+<div fxLayout="row wrap" fxLayoutGap="5px" style="padding: 5px; margin-left: 6px;">
+  <div fxFlex="18" >
+<mat-card style="height: 90%;">
+ <h4 class="h1"> EFFICIENCY %</h4>
+     <mat-card-content>
+      <div class=>
+        <!-- <ejs-circulargauge  style='display:block;' id='range-container'
+            #circulargauge='' [title]='title' [titleStyle]='titleStyle'>
+            <e-axes>
+                <e-axis minimum=0 radius='80%' maximum=100 startAngle=200 endAngle=160 [majorTicks='majorTicks'
+                    [labelStyle]='labelStyle' [lineStyle]='lineStyle'  [pointers]='pointers'>
+                </e-axis>
+            </e-axes>
+        </ejs-circulargauge> -->
+      </div>
+      
+  </mat-card-content>
   
   </mat-card> 
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div class="color1">
-        UTILIZATION
-        </div>
-    </mat-card-header>
-    
-    <mat-card-content>
-     
-    </mat-card-content>
-  
-  </mat-card>
-
-
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div class="color1">
-        OPERATOR
-        </div>
-    </mat-card-header>
-    
-    <mat-card-content>
-     
-    </mat-card-content>
-  
-  </mat-card>
-
-
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div class="color1">
-        PRODUCTION
-        </div>
-    </mat-card-header>
-    
-    <mat-card-content>
-     
-    </mat-card-content>
-  
-  </mat-card>
-
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div class="color1">
-        STOPPAGE
-        </div>
-    </mat-card-header>
-    
-    <mat-card-content>
-     
-    </mat-card-content>
-  
-  </mat-card>
-
 </div>
 
-<div>
-
-
-    <div fxLayout="row wrap" fxLayoutGap="10">
-        <div fxFlex="20" >
-      <mat-card class="example-card" style="margin-bottom: 16px; height: 400px; width: 300px;">
-          <mat-card-title>
-              
-                <div class="row">
-                  <div class="color">
-                    <h1>Column chart</h1>
-                    </div>
-                  </div>
+<div fxFlex="18" >
+  <mat-card style="height: 90%;">
+    <h4 class="h1"> UTLIZATION</h4>
+       <mat-card-content>
+        <div class=>
+        
+        </div>
+        
+    </mat-card-content>
     
-              <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-                   [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea'  height="350"  style="width: 300px;">
-                  <e-series-collection>
-                      <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1' width="3" fill="orange" ></e-series>
-                      <e-series [dataSource]='chartData' type='Column' xName='month' yName='y2' name='Y2' width="5" fill="red"></e-series>
-                  </e-series-collection>
-              </ejs-chart>
-    
-              <div class="row">
-                <div class="column">
-            </div>
+    </mat-card> 
+  </div>
+
+  <div fxFlex="18" >
+    <mat-card style="height: 90%;">
+      <h4 class="h1">OPERATOR</h4>
+         <mat-card-content>
+          <div class=>
+            
           </div>
-    
-        </mat-card-title>
-        </mat-card>
-    </div>   
-</div>
-<div fxFlex="20" >
-  <mat-card class="example-card" style="margin-bottom: 16px;  height: 400px; width: 300px;" >
-      <mat-card-title>
           
-            <div class="row">
-              <div class="color">
-                <h1 >Line chart</h1>
-              </div>
-              </div>
+      </mat-card-content>
+      
+      </mat-card> 
+    </div>
 
-              <ejs-chart id="chart-container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-              [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350" style="width: 300px;">
-             <e-series-collection>
-                 <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1'  width="3" fill="Violet"></e-series>
-                 <e-series [dataSource]='chartData' type='Line' xName='month' yName='y2' name='Y2' width="5" fill="DodgerBlue"></e-series>
-             </e-series-collection>
-         </ejs-chart>
-
-          
-          <div class="row">
-            <div class="column">
-        </div>
+    <div fxFlex="18" >
+      <mat-card style="height: 90%;">
+        <h4 class="h1"> PRODUCTION</h4>
+           <mat-card-content>
+            <div class="PRODUCTION">
+              <tr>
+                <td>ACTUAL:</td>
+                <td style="color: black; padding-left:20px;"> 1418</td>
+              </tr>
+              <br>
+              <tr>
+                <td>TARGET:</td>
+                <td style="color:green; padding-left:20px;">1878</td>
+              </tr>
+              <br>
+              <tr>
+                <td>DFF:</td>
+                <td style="color:orange; padding-left:60px;">460</td>
+              </tr>
+                 
+             
+            </div>
+            
+        </mat-card-content>
+        
+        </mat-card> 
       </div>
 
-    </mat-card-title>
-    </mat-card>
+      <div fxFlex="18" >
+        <mat-card style="height: 90%;">
+          <h4 class="h1"> STOPPAGE</h4>
+             <mat-card-content>
+              <div class="bar">
+                 <br>
+                 <br>
+                 
+                  47
+                  
+                  <div class="bar1">
+                    MINS
+                  </div>
+                  
+              </div>
+              
+          </mat-card-content>
+          
+          </mat-card> 
+        </div>
+        
 </div>
 
-<div>
-  <div fxFlex="20" >
-    <mat-card class="example-card" style="margin-bottom: 16px;  height: 400px; width: 300px;" >
-        <mat-card-title>
-            
-              <div class="row">
-                <div class="color">
-                  <h1 >Area chart</h1>
-                </div>
-                </div>
+
+<div fxLayout="row wrap" fxLayoutGap="15px"  style="margin-top:30px; padding: 10px;">
+  <div fxFlex="35" >
+<mat-card>
+  <h4 class="h1"> EFFICIENCY HISTORY</h4>
+     <mat-card-content>
+      <div class=>
+        <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+        [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea'  height="350"   style="width: 520px;">
+       <e-series-collection>
+           <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1' width="5" fill="#5DADE2" ></e-series>
+           <e-series [dataSource]='chartData' type='Column' xName='month' yName='y2' name='Y2' width="5" fill="#F1C40F"></e-series>
+       </e-series-collection>
+   </ejs-chart>
+
+      </div>
+      
+  </mat-card-content>
   
-            
-          
-      </mat-card-title>
-      </mat-card>
+  </mat-card> 
+</div>
+
+<div fxFlex="35" >
+  <mat-card>
+    <h4 class="h1">PRODUCTION HISTORY</h4>
+       <mat-card-content>
+        <div class=>
+          <ejs-chart id="chart-container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+          [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350" style="width: 520px;">
+         <e-series-collection>
+             <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1'  width="5" fill="#85C1E9 "></e-series>
+             <e-series [dataSource]='chartData' type='Line' xName='month' yName='y2' name='Y2' width="5" fill="#F39C12"></e-series>
+         </e-series-collection>
+     </ejs-chart>
+        </div>
+        
+    </mat-card-content>
+    
+    </mat-card> 
   </div>
-</div> 
+
+  <div fxFlex="20" >
+    <mat-card style="height:414px;">
+      <h4 class="h1" > TOP 5 STOPPAGE</h4>
+         <mat-card-content style="padding-top: 70px;">
+          <div class=>
+            <div>
+            M-SEWING ERROR |19| 54.29%
+            <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+          </div>
+            <br>
+            <div>
+              M-LABEL OR FOLDING ERROR |11|31.43%
+            <mat-progress-bar mode="determinate" value="20"></mat-progress-bar>
+          </div>
+            <br>
+            <div>
+              M-LABEL OR FOLDING ERROR |11|31.43%
+            <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
+          </div>
+            <br>
+            <div>
+              M-LABEL OR FOLDING ERROR |11|31.43%
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+            <br>
+            <div>
+              M-LABEL OR FOLDING ERROR |11|31.43%
+            <mat-progress-bar mode="determinate" value="26"></mat-progress-bar>
+          </div>
+            <br>
+
+          </div>
+          
+      </mat-card-content>
+      
+      </mat-card> 
+    </div>
+
+  
+        
+</div>
+
+<div fxLayout="row wrap" fxLayoutGap="10px" style="margin-left: 10px;">
+  <div fxFlex="60" >
+<mat-card style="height:200px;">
+  <h4 class="h1"> RUNING DYELOT INFORMATION</h4>
+     <mat-card-content>
+      <div class=>
+      
+
+        <div fxFlex="50">
+         <tr>
+           <td>DYELOT:</td>
+           <td style="color: blue; padding-left: 90px;" >S547227</td>
+         </tr>
+          
+         <br>
+         <tr>
+          <td>SHADE:</td>
+          <td style="color: blue; padding-left: 96px;">AQUA</td>
+        </tr>
+         
+         <br>
+         <tr>
+          <td>TOTAL PCS:</td>
+          <td style="color: blue; padding-left: 70px;">7532</td>
+        </tr>
+         
+         <br><tr>
+          <td>TOTAL KGS:</td>
+          <td style="color: blue; padding-left: 66px;">1137.332</td>
+        </tr>
+         
+                
+        </div>
+        <div fxFlex="50">
+          <tr>
+            <td>CUSTOMER NAME:</td>
+            <td style="color: blue; padding-left: 70px;">KOHL'S DEPARTMENT STORES INC</td>
+          </tr>
+        
+        <br>
+        <tr>
+          <td> DESIGN:</td>
+          <td style="color: blue; padding-left: 136px;">41x71/KOHLS SONOMAHYGRO BCI</td>
+        </tr>
+       
+                
+        </div>
+
+
+
+      </div>
+      
+  </mat-card-content>
+  
+  </mat-card> 
+</div>
+
+<div fxFlex="31" >
+  <mat-card style="height:200px;">
+    <h4 class="h1"> OPR INFO</h4>
+       <mat-card-content>
+        <div class=>
+        
+          <div fxFlex="50">
+            
+      <img mat-card-lg-image src="assets/images/suresh.jpg"  style="height:90px; padding-bottom: 10px; width: 90px;" >
+                   
+           </div>
+           <div fxFlex="30">
+
+            <tr>
+              <td>NAME:</td>
+              <td style=" padding-left: 70px;">ABISHEK</td>
+            </tr>
+          
+             
+            
+             <br>
+             <tr>
+              <td>DESIGNATION:</td>
+              <td style=" padding-left: 20px;">ADMIN</td>
+            </tr>
+             
+             <br>
+             <tr>
+              <td>LOG IN TIME:</td>
+              <td style=" padding-left: 80px;">2022-02-03 8.00AM</td>
+            </tr>
+            
+           </div>
+        </div>
+        
+    </mat-card-content>
+    
+    </mat-card> 
+  </div>
+
+
+
 </div>

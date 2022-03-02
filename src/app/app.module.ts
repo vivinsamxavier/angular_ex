@@ -32,6 +32,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ScreentwoComponent } from './screentwo/screentwo.component';
 import { MatChipsModule } from '@angular/material/chips';
 import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
+import { CircularGaugeAllModule } from '@syncfusion/ej2-angular-circulargauge';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 
@@ -67,7 +69,8 @@ import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
     MatButtonToggleModule,
     MatChipsModule,
     ProgressBarModule,
-    
+    CircularGaugeAllModule,
+    MatProgressBarModule
     
   ],    
     
