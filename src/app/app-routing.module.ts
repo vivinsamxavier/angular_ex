@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookviewComponent } from './bookview/bookview.component';
+import { ExamplecircularComponent } from './examplecircular/examplecircular.component';
 import { ExampleschartsComponent } from './examplescharts/examplescharts.component';
 import { ExamplesgirdComponent } from './examplesgird/examplesgird.component';
 import { ExamplespieComponent } from './examplespie/examplespie.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path:  'examplesgird',component: ExamplesgirdComponent },
   { path: 'multi',component:MultilineComponent },
   { path:'screen',component:ScreencardComponent },
-  {path:'screentwo',component:ScreentwoComponent}
+  {path:'screentwo',component:ScreentwoComponent},
+  {path: 'examplecir',component:ExamplecircularComponent}
 
 ];
 

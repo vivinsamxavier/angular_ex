@@ -34,6 +34,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
 import { CircularGaugeAllModule } from '@syncfusion/ej2-angular-circulargauge';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { ExamplecircularComponent } from './examplecircular/examplecircular.component';
 
 
 
@@ -48,7 +49,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     ExamplesgirdComponent,
     MultilineComponent,
     ScreencardComponent,
-    ScreentwoComponent
+    ScreentwoComponent,
+    ExamplecircularComponent
   ],
   imports: [
     BrowserModule,

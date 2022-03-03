@@ -1,10 +1,19 @@
 <div class="firstcol">
-<div fxLayout="row wrap" fxLayoutGap="5px" style="padding: 5px; margin-left: 6px;">
+<div fxLayout="row wrap" fxLayoutGap="5px" style=" margin-left: 6px;">
   <div fxFlex="18" >
 <mat-card style="height: 90%;">
  <h4 class="h1"> EFFICIENCY %</h4>
      <mat-card-content>
       <div class=>
+        <ejs-circulargauge  id='range-container'
+        #circulargauge='' [title]='title' [titleStyle]='titleStyle' style="display:block;height:170px;" width='100%'>
+        <e-axes>
+            <e-axis minimum=0 radius='115%' maximum=100 startAngle=210 endAngle=150 [majorTicks]='majorTicks'
+                [labelStyle]='labelStyle' [lineStyle]='lineStyle' [minorTicks]='minorTicks' [annotations]='annotaions'
+                [ranges]='ranges' [pointers]='pointers'>
+            </e-axis>
+        </e-axes>
+    </ejs-circulargauge>
         <!-- <ejs-circulargauge  style='display:block;' id='range-container'
             #circulargauge='' [title]='title' [titleStyle]='titleStyle'>
             <e-axes>
@@ -25,7 +34,18 @@
     <h4 class="h1"> UTLIZATION</h4>
        <mat-card-content>
         <div class=>
+          <ejs-circulargauge  id='range-container1'
+        #circulargauge='' [title]='title' [titleStyle]='titleStyle' style="display:block;height:170px;" width='100%'>
+        <e-axes>
+            <e-axis minimum=0 radius='115%' maximum=100 startAngle=210 endAngle=150 [majorTicks]='majorTicks'
+                [labelStyle]='labelStyle' [lineStyle]='lineStyle' [minorTicks]='minorTicks' [annotations]='annotaions'
+                [ranges]='ranges' [pointers]='pointers'>
+            </e-axis>
+        </e-axes>
+    </ejs-circulargauge>
         
+          
+
         </div>
         
     </mat-card-content>
@@ -38,6 +58,15 @@
       <h4 class="h1">OPERATOR</h4>
          <mat-card-content>
           <div class=>
+            <ejs-circulargauge  id='range-container2'
+        #circulargauge='' [title]='title' [titleStyle]='titleStyle' style="display:block;height:170px;" width='100%'>
+        <e-axes>
+            <e-axis minimum=0 radius='115%' maximum=100 startAngle=210 endAngle=150 [majorTicks]='majorTicks'
+                [labelStyle]='labelStyle' [lineStyle]='lineStyle' [minorTicks]='minorTicks' [annotations]='annotaions'
+                [ranges]='ranges' [pointers]='pointers'>
+            </e-axis>
+        </e-axes>
+    </ejs-circulargauge>
             
           </div>
           
@@ -49,21 +78,21 @@
     <div fxFlex="18" >
       <mat-card style="height: 90%;">
         <h4 class="h1"> PRODUCTION</h4>
-           <mat-card-content>
-            <div class="PRODUCTION">
+           <mat-card-content >
+            <div class="pro">
               <tr>
-                <td>ACTUAL:</td>
-                <td style="color: black; padding-left:20px;"> 1418</td>
+                <td>ACTUAL</td>
+                <td style="color: black; padding-left:50px; "> 1418</td>
               </tr>
               <br>
               <tr>
-                <td>TARGET:</td>
-                <td style="color:green; padding-left:20px;">1878</td>
+                <td>TARGET</td>
+                <td style="color:green; padding-left:50px;">1878</td>
               </tr>
               <br>
               <tr>
-                <td>DFF:</td>
-                <td style="color:orange; padding-left:60px;">460</td>
+                <td>DFF</td>
+                <td style="color:orange; padding-left:90px;">460</td>
               </tr>
                  
              
@@ -98,14 +127,14 @@
 </div>
 
 
-<div fxLayout="row wrap" fxLayoutGap="15px"  style="margin-top:30px; padding: 10px;">
+<div fxLayout="row wrap" fxLayoutGap="15px"  style="margin-top:20px; padding: 10px;">
   <div fxFlex="35" >
 <mat-card>
   <h4 class="h1"> EFFICIENCY HISTORY</h4>
      <mat-card-content>
       <div class=>
         <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-        [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea'  height="350"   style="width: 520px;">
+        [title]='title' [tooltip]='tooltip' [chartArea]='chartArea'  height="350"   style="width: 520px;">
        <e-series-collection>
            <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1' width="5" fill="#5DADE2" ></e-series>
            <e-series [dataSource]='chartData' type='Column' xName='month' yName='y2' name='Y2' width="5" fill="#F1C40F"></e-series>
@@ -125,7 +154,7 @@
        <mat-card-content>
         <div class=>
           <ejs-chart id="chart-container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-          [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350" style="width: 520px;">
+          [title]='title' [tooltip]='tooltip'  [chartArea]='chartArea' height="350" style="width: 520px;">
          <e-series-collection>
              <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1'  width="5" fill="#85C1E9 "></e-series>
              <e-series [dataSource]='chartData' type='Line' xName='month' yName='y2' name='Y2' width="5" fill="#F39C12"></e-series>
@@ -141,7 +170,7 @@
   <div fxFlex="20" >
     <mat-card style="height:414px;">
       <h4 class="h1" > TOP 5 STOPPAGE</h4>
-         <mat-card-content style="padding-top: 70px;">
+         <mat-card-content style="padding-top: 20px;">
           <div class=>
             <div>
             M-SEWING ERROR |19| 54.29%
@@ -185,29 +214,29 @@
 <mat-card style="height:200px;">
   <h4 class="h1"> RUNING DYELOT INFORMATION</h4>
      <mat-card-content>
-      <div class=>
+      
       
 
         <div fxFlex="50">
          <tr>
-           <td>DYELOT:</td>
+           <td>DYELOT</td>
            <td style="color: blue; padding-left: 90px;" >S547227</td>
          </tr>
           
          <br>
          <tr>
-          <td>SHADE:</td>
+          <td>SHADE</td>
           <td style="color: blue; padding-left: 96px;">AQUA</td>
         </tr>
          
          <br>
          <tr>
-          <td>TOTAL PCS:</td>
+          <td>TOTAL PCS</td>
           <td style="color: blue; padding-left: 70px;">7532</td>
         </tr>
          
          <br><tr>
-          <td>TOTAL KGS:</td>
+          <td>TOTAL KGS</td>
           <td style="color: blue; padding-left: 66px;">1137.332</td>
         </tr>
          
@@ -215,22 +244,18 @@
         </div>
         <div fxFlex="50">
           <tr>
-            <td>CUSTOMER NAME:</td>
+            <td>CUSTOMER NAME</td>
             <td style="color: blue; padding-left: 70px;">KOHL'S DEPARTMENT STORES INC</td>
           </tr>
         
         <br>
         <tr>
-          <td> DESIGN:</td>
+          <td> DESIGN</td>
           <td style="color: blue; padding-left: 136px;">41x71/KOHLS SONOMAHYGRO BCI</td>
         </tr>
        
                 
         </div>
-
-
-
-      </div>
       
   </mat-card-content>
   
@@ -243,15 +268,15 @@
        <mat-card-content>
         <div class=>
         
-          <div fxFlex="50">
+          <div fxFlex="30">
             
-      <img mat-card-lg-image src="assets/images/suresh.jpg"  style="height:90px; padding-bottom: 10px; width: 90px;" >
+      <img mat-card-lg-image src="assets/images/suresh.jpg"  style="height:100px; padding-bottom: 10px; width: 100px;" >
                    
            </div>
-           <div fxFlex="30">
+           <div fxFlex="70">
 
             <tr>
-              <td>NAME:</td>
+              <td>NAME</td>
               <td style=" padding-left: 70px;">ABISHEK</td>
             </tr>
           
@@ -259,14 +284,14 @@
             
              <br>
              <tr>
-              <td>DESIGNATION:</td>
+              <td>DESIGNATION</td>
               <td style=" padding-left: 20px;">ADMIN</td>
             </tr>
              
              <br>
              <tr>
-              <td>LOG IN TIME:</td>
-              <td style=" padding-left: 80px;">2022-02-03 8.00AM</td>
+              <td>LOG IN TIME</td>
+              <td style=" padding-left: 30px;">2022-02-03 8.00AM</td>
             </tr>
             
            </div>
