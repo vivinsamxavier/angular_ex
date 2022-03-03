@@ -26,20 +26,7 @@ export class ScreentwoComponent implements OnInit {
     position: 'Inside', useRangeColor: true,
     font: { size: '0px', color: 'white', fontFamily: 'Roboto', fontStyle: 'Regular' }
 };
-  // custom code start
-  public load1(args: ILoadedEventArgs): void {
-      let selectedTheme: string = location.hash.split('/')[1];
-      selectedTheme = selectedTheme ? selectedTheme : 'Material';
-      args.gauge.theme = <GaugeTheme>(selectedTheme.charAt(0).toUpperCase() +
-      selectedTheme.slice(1)).replace(/-dark/i, 'Dark').replace(/contrast/i,  'Contrast');
-  }
-  // custom code end
-  public loaded(args: ILoadedEventArgs):void {
-      let annotation: any = document.getElementById(args.gauge.element.id + '_Annotations_0');
-      if (annotation) {
-        //  this.annotationRender('slider', this.circulargauge.axes[0].pointers[0].value);
-      }
-  };
+ 
   public ranges: Object[] = [
       {
           start: 0, end: 100,
