@@ -10,93 +10,53 @@
             </mat-card-title> 
               <mat-card-content>
 
-                <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+  <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
                 [title]='title' [tooltip]='tooltip'  [chartArea]='chartArea'  height="600">
-               <e-series-collection>
+              <e-series-collection>
                    <e-series [dataSource]='chartData' type='Line' xName='month' yName='y1' name='Y1' width="3" fill="orange" ></e-series>
                    <e-series [dataSource]='chartData' type='Line' xName='month' yName='y2' name='Y2' width="5" fill="red"></e-series>
-               </e-series-collection>
-           </ejs-chart>
-           
-        </mat-card-content>
-
-           <!-- <ejs-chart style='display:block' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis1' [primaryYAxis]='primaryYAxis1'
-           [tooltip]='tooltip1' (load)='load($event)' [chartArea]='chartArea1' [width]='width' [legendSettings]='legend'>
-           <e-series-collection>
-               <e-series [dataSource]='chartData' type='MultiColoredLine' xName='y1' yName='y2' name='Rainfall' width=1.5 pointColorMapping='color'>
-               </e-series>
-               </e-series-collection>
-               </ejs-chart>
-
-              </mat-card-content> -->
-   
-      </mat-card>
-      
-     </div>
+              </e-series-collection>
+</ejs-chart>        
+</mat-card-content>
+</mat-card>
+</div>
   
     
 
 
-     <div fxFlex="30" >
-         <div>
-            <mat-card class="example-card" >
+<div fxFlex="30" >
+                <div>
+                <mat-card class="example-card" >
                 <mat-card-title-group>
-                  <mat-card-title>Minimum</mat-card-title>
-                  
-                
-
+                <mat-card-title>Minimum</mat-card-title>
                 </mat-card-title-group>
-                <mat-card-content class="column">
-                    
-                    
-                            
-                                47.00
-                            
-                
-
+                <mat-card-content class="column"> 
+                       47.00
                 </mat-card-content>
-              </mat-card>
-        </div>
+                </mat-card>
+                </div>
  <br>
-
-        <div>
-            <mat-card class="example-card" >
-                <mat-card-title-group>
-                  <mat-card-title>Maximum</mat-card-title>
-                  
-                 
-
-
-                </mat-card-title-group>
-                <mat-card-content class="column">
-                
-                        
-                        50.31
-                       
-        
-                </mat-card-content>
+              <div>
+              <mat-card class="example-card" >
+              <mat-card-title-group>
+              <mat-card-title>Maximum</mat-card-title>
+              </mat-card-title-group>
+              <mat-card-content class="column">
+                  50.31
+              </mat-card-content>
               </mat-card>
-        </div>
+              </div>
 <br>
-
-        <div>
-            <mat-card class="example-card">
-                <mat-card-title-group>
-                  <mat-card-title>Average</mat-card-title>
-       
-                
-                
-
-                </mat-card-title-group>
-                <mat-card-content class="column">
-            
-                        
-                            70.89
-                        
-    
-                </mat-card-content>
-              </mat-card>
-        </div>
-      </div>
+           <div>
+           <mat-card class="example-card">
+           <mat-card-title-group>
+           <mat-card-title>Average</mat-card-title>
+           </mat-card-title-group>
+           <mat-card-content class="column">
+                70.89
+          </mat-card-content>
+          </mat-card>
+          </div>
+          </div>
               
      

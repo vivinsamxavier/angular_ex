@@ -84,37 +84,7 @@ export class ExamplecircularComponent implements OnInit {
       zIndex: '1',
       radius: '0%'
   }, ];
-      // public annotationRender(id: string, sliderValue: number): void {
-      //     let first: Slider = new Slider({
-      //         // Set the value for slider
-      //         min: 0, max: 100,
-      //         type: 'MinRange',
-      //         limits: { enabled: true, minStart: 0, minEnd: 100 },
-      //         value: sliderValue,
-      //         change: (args: SliderChangeEventArgs) => {
-      //             sliderValue = args.value as number;
-      //             if (!isNaN(sliderValue)) {
-      //                 this.circulargauge['isProtectedOnChange'] = true;
-      //                 if (sliderValue >= 0 && sliderValue < 20) {
-      //                     this.circulargauge.axes[0].pointers[0].color = '#ea501a';
-      //                 } else if (sliderValue >= 20 && sliderValue < 40) {
-      //                     this.circulargauge.axes[0].pointers[0].color = '#f79c02';
-      //                 } else if (sliderValue >= 40 && sliderValue < 60) {
-      //                     this.circulargauge.axes[0].pointers[0].color = '#e5ce20';
-      //                 } else if (sliderValue >= 60 && sliderValue < 80) {
-      //                     this.circulargauge.axes[0].pointers[0].color = '#a1cb43';
-      //                 } else if (sliderValue >= 80 && sliderValue < 100) {
-      //                     this.circulargauge.axes[0].pointers[0].color = '#82b944';
-      //                 }
-      //                 this.circulargauge.setPointerValue(0, 0, sliderValue);
-      //                 if (document.getElementById('pointervalue')) {
-      //                     // document.getElementById('pointervalue').innerHTML = this.circulargauge.axes[0].pointers[0].value.toString() + '/100';
-      //                 }
-      //             }
-      //         }
-      //     });
-      //     first.appendTo('#' + id);
-      // }
+     
 
   constructor() { }
 

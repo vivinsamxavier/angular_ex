@@ -22,59 +22,6 @@ export class MultilineComponent implements OnInit {
     enable: true
 };
 
-// public dataValues: Object[] = [];
-// public colors: string[] = ['red'];
-
-//     public primaryXAxis1: Object = {
-//       valueType: 'DateTime',
-//       labelFormat: 'y',
-//       intervalType: 'Years',
-//       edgeLabelPlacement: 'Shift',
-//       majorGridLines: { width: 0 }
-//   };
-//   public primaryYAxis1: Object = {
-//     rangePadding: 'None',
-//     minimum: 4,
-//     maximum: 10,
-//     title: 'Particulate Matter(PM)',
-//     lineStyle: { width: 0 },
-//     majorTickLines: { width: 0 },
-//     minorTickLines: { width: 0 }
-// };
-// public chartArea1: Object = {
-//     border: {
-//         width: 0
-//     }
-// };
-// public width: string = Browser.isDevice ? '100%' : '60%';
-// public legend: Object = { visible: false };
-// public segments: Object[] = [{
-//     value: 450,
-//     color: 'red'
-// }, {
-//     value: 500,
-//     color: 'green'
-// }, {
-//     color: 'blue'
-// }];
-// public tooltip1: Object = {
-//     enable: true, shared: true
-// };
-// public load(args: ILoadedEventArgs): void {
-  
-  
-  // let selectedTheme: string = location.hash.split('/')[1];
-  // selectedTheme = selectedTheme ? selectedTheme : 'Material';
-  // args.chart.theme = <ChartTheme>(selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1)).replace(/-dark/i, "Dark");
-  // custom code end
-  // rainFallData.map((value: number, index: number) => {
-  //     this.dataValues.push({
-  //         XValue: new Date(2017, -index, 1), YValue: value.toFixed(2),
-  //         color: this.colors[Math.floor(index / 16)]
-  //     });
-  // });
-// };
-
 
   constructor() { }
 

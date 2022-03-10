@@ -35,6 +35,7 @@ import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
 import { CircularGaugeAllModule } from '@syncfusion/ej2-angular-circulargauge';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ExamplecircularComponent } from './examplecircular/examplecircular.component';
+import { SvgimageComponent } from './svgimage/svgimage.component';
 
 
 
@@ -50,7 +51,8 @@ import { ExamplecircularComponent } from './examplecircular/examplecircular.comp
     MultilineComponent,
     ScreencardComponent,
     ScreentwoComponent,
-    ExamplecircularComponent
+    ExamplecircularComponent,
+    SvgimageComponent
   ],
   imports: [
     BrowserModule,

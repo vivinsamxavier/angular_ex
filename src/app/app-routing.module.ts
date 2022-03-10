@@ -10,6 +10,7 @@ import { LogintwoComponent } from './logintwo/logintwo.component';
 import { MultilineComponent } from './multiline/multiline.component';
 import { ScreencardComponent } from './screencard/screencard.component';
 import { ScreentwoComponent } from './screentwo/screentwo.component';
+import { SvgimageComponent } from './svgimage/svgimage.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'multi',component:MultilineComponent },
   { path:'screen',component:ScreencardComponent },
   {path:'screentwo',component:ScreentwoComponent},
-  {path: 'examplecir',component:ExamplecircularComponent}
+  {path: 'examplecir',component:ExamplecircularComponent},
+  {path:'svgimg',component:SvgimageComponent}
 
 ];
 

@@ -69,8 +69,6 @@ public dataLabel2: Object = {
 };
 
 
-
-
    constructor(){
       this.title = '';
       this.chartData = [
@@ -91,19 +89,20 @@ public dataLabel2: Object = {
       height:'8%',
       width:'35%'
     };
-    this.dataLabel={
-      visible: true,
+  this.dataLabel={
+  visible: true,
   name: 'text',
   position: 'Inside',
+  
   font: {
       fontWeight: '600',
       color: '#ffffff'
-  }
+        }
 
-    }
+       }
     
-  }
+       }
   ngOnInit(): void{
 
-  }
-}
+      }
+      }

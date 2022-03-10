@@ -8,7 +8,7 @@
               </div>
 
           <ejs-chart id="chart-container"    [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-               [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea'  height="350">
+               [title]='title' [tooltip]='tooltip'  [chartArea]='chartArea'  height="350">
               <e-series-collection>
                   <e-series [dataSource]='chartData' type='Line' xName='month' yName='y1' name='Y1' width="3" fill="orange" ></e-series>
                   <e-series [dataSource]='chartData' type='Line' xName='month' yName='y2' name='Y2' width="5" fill="red"></e-series>
@@ -34,7 +34,7 @@
               </div>
 
               <ejs-chart id="chart-container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-              [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350">
+              [title]='title' [tooltip]='tooltip'  [chartArea]='chartArea' height="350">
              <e-series-collection>
                  <e-series [dataSource]='chartData' type='Area' xName='month' yName='y1' name='Y1'  width="3" fill="Violet"></e-series>
                  <e-series [dataSource]='chartData' type='Area' xName='month' yName='y2' name='Y2' width="5" fill="DodgerBlue"></e-series>
@@ -61,7 +61,7 @@
                 </div>
   
                 <ejs-chart id="chart-container2" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-                [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350">
+                [title]='title' [tooltip]='tooltip'  [chartArea]='chartArea' height="350">
                <e-series-collection>
                    <e-series [dataSource]='chartData' type='Column' xName='month' yName='y1' name='Y1' width="3" fill="SlateBlue"></e-series>
                    <e-series [dataSource]='chartData' type='Column' xName='month' yName='y2' name='Y2' width="5" fill="DodgerBlue"></e-series>
@@ -87,7 +87,7 @@
                 </div>
   
                 <ejs-chart id="chart-container3" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-                [title]='title' [tooltip]='tooltip' (load)='load($event)' [chartArea]='chartArea' height="350">
+                [title]='title' [tooltip]='tooltip' [chartArea]='chartArea' height="350">
                <e-series-collection>
                    <e-series [dataSource]='chartData' type='StackingColumn' xName='month' yName='y1' name='Y1'  width="3" fill="green"></e-series>
                    <e-series [dataSource]='chartData' type='StackingColumn' xName='month' yName='y2' name='Y2'  width="5" fill="yellow"></e-series>

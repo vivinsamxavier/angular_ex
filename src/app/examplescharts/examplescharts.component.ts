@@ -26,12 +26,8 @@ export class ExampleschartsComponent implements OnInit {
     enable: true
 };
 public width: string = Browser.isDevice ? '100%' : '60%';
-// custom code start
-public load(args: ILoadedEventArgs): void {
-    let selectedTheme: string = location.hash.split('/')[1];
-    selectedTheme = selectedTheme ? selectedTheme : 'Material';
-    args.chart.theme = <ChartTheme>(selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1)).replace(/-dark/i, "Dark");
-};
+
+
 
   
   ngOnInit(): void {
