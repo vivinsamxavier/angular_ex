@@ -7,16 +7,10 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class SvgimageComponent implements OnInit,AfterViewInit {
   
-
-  
-
   constructor() { }
 
   ngOnInit(): void {
    
-   
-   
-
   }
   ngAfterViewInit(): void {
     setTimeout(()=>{

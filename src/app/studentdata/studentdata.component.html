@@ -1,0 +1,28 @@
+<h1>book customers</h1>
+<table id="customers" >
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Book Category</th>
+            <th>Book Name</th>
+            <th>AuthourName</th>
+            <th>Price</th>
+            <th>Radio</th>
+            <th>Purchasedate</th>
+            <th>Descrption</th>
+            
+          <tr>  
+        </thead>
+        <tbody>
+          <tr *ngFor= "let data of studData">
+            <td>{{data.id}}</td>
+            <td>{{data.bookcategory}}</td>
+            <td>{{data.bookname}}</td>
+            <td>{{data.authorname}}</td>
+            <td>{{data.price}}</td>
+            <td>{{data.radio}}</td>
+            <td>{{data.purchasedate}}</td>
+            <td>{{data.descrption}}</td>
+          </tr>
+         
+        </tbody>

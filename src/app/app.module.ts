@@ -36,6 +36,9 @@ import { CircularGaugeAllModule } from '@syncfusion/ej2-angular-circulargauge';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ExamplecircularComponent } from './examplecircular/examplecircular.component';
 import { SvgimageComponent } from './svgimage/svgimage.component';
+import { StudentdataComponent } from './studentdata/studentdata.component';
+import { SampleService } from './sample.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -52,7 +55,8 @@ import { SvgimageComponent } from './svgimage/svgimage.component';
     ScreencardComponent,
     ScreentwoComponent,
     ExamplecircularComponent,
-    SvgimageComponent
+    SvgimageComponent,
+    StudentdataComponent
   ],
   imports: [
     BrowserModule,
@@ -74,12 +78,13 @@ import { SvgimageComponent } from './svgimage/svgimage.component';
     MatChipsModule,
     ProgressBarModule,
     CircularGaugeAllModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    HttpClientModule
     
   ],    
     
   providers: [ CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService,AreaSeriesService,ColumnSeriesService,StackingColumnSeriesService,PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService,
-    AccumulationAnnotationService,SearchService, ToolbarService, EditService,FilterService],
+    AccumulationAnnotationService,SearchService, ToolbarService, EditService,FilterService, SampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
