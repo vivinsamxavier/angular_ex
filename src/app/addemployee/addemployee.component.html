@@ -1,0 +1,29 @@
+<form [formGroup]= "Employee" novalidate>
+    <h2>employee details</h2>
+  
+    
+  
+    <label for="First Name">First Name: </label>
+    <input id="First Name" type="text" formControlName="First_Name">
+  
+    <label for="Last Name">Last Name: </label>
+    <input id="Last Name" type="text" formControlName="Last_Name">
+  
+    <label for="Email">Email: </label>
+    <input id="Email" type="text" formControlName="Email">
+
+    <label for="Phone_Number">Phone_Number: </label>
+    <input id="Phone_Number" type="number" formControlName="Phone_Number">
+
+    <label for="hire_date">hire_date: </label>
+    <input id="hire_date" type="date" formControlName="hire_date">
+
+
+    <label for="designation">designation: </label>
+    <input id="designation" type="text" formControlName="designation">
+
+    <label for="salary">salary: </label>
+    <input id="salary" type="number" formControlName="salary">
+
+    <button type="button" (click)="Add()" >Add Profile</button>
+</form>

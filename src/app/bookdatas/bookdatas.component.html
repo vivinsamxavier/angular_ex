@@ -1,0 +1,34 @@
+
+<h1>employee details</h1>
+<a routerLink="/Add"><button onclick="" class="btn-info"> ADD</button></a>
+<table id="customers" >
+        <thead>
+          <tr>
+            <th>Employee id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone_Number</th>
+            <th>hire_date</th>
+            <th>designation</th>
+            <th>salary</th>
+            <th>action</th>
+            
+          <tr>  
+        </thead>
+        <tbody>
+            <tr *ngFor= "let data of Employeedata">
+            <td>{{data.employee_id}}</td>
+            <td>{{data.first_name}}</td>
+            <td>{{data.last_name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.phone_number}}</td>
+            <td>{{data.hire_date}}</td>
+            <td>{{data.designation}}</td>
+            <td>{{data.salary}}</td>
+            <td>
+              <button onclick="" class="btn-danger"> Delete</button>
+            </td>
+          </tr>
+         
+        </tbody>

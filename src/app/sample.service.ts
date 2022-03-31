@@ -11,6 +11,14 @@ export class SampleService {
    }
    getStudent(){
     return this.http.get('http://localhost/libraryjson/getdata.php');
+
+  }
+  getEmployeedata(){
+    return this.http.get('http://localhost/libraryjson/getemp.php');
+  }
+  Employee(val:any){
+    return this.http.post('http://localhost/libraryjson/addemp.php', val);
   }
 }
+
 

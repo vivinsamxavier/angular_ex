@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { BookdatasComponent } from './bookdatas/bookdatas.component';
 import { BookviewComponent } from './bookview/bookview.component';
 import { ExamplecircularComponent } from './examplecircular/examplecircular.component';
 import { ExampleschartsComponent } from './examplescharts/examplescharts.component';
@@ -26,7 +28,9 @@ const routes: Routes = [
   {path:'screentwo',component:ScreentwoComponent},
   {path: 'examplecir',component:ExamplecircularComponent},
   {path:'svgimg',component:SvgimageComponent},
-  {path: 'studentdata',component:StudentdataComponent}                                      
+  {path: 'studentdata',component:StudentdataComponent},
+  {path: 'bookdatas' ,component:BookdatasComponent},
+  {path:'Add',component:AddemployeeComponent}                                    
 
 ];
 

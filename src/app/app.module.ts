@@ -39,6 +39,9 @@ import { SvgimageComponent } from './svgimage/svgimage.component';
 import { StudentdataComponent } from './studentdata/studentdata.component';
 import { SampleService } from './sample.service';
 import {HttpClientModule} from '@angular/common/http';
+import { BookdatasComponent } from './bookdatas/bookdatas.component';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
 
 
@@ -56,7 +59,9 @@ import {HttpClientModule} from '@angular/common/http';
     ScreentwoComponent,
     ExamplecircularComponent,
     SvgimageComponent,
-    StudentdataComponent
+    StudentdataComponent,
+    BookdatasComponent,
+    AddemployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +84,9 @@ import {HttpClientModule} from '@angular/common/http';
     ProgressBarModule,
     CircularGaugeAllModule,
     MatProgressBarModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
     
   ],    
     
