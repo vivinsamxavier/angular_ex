@@ -42,6 +42,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { BookdatasComponent } from './bookdatas/bookdatas.component';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { UpdateempComponent } from './updateemp/updateemp.component';
 
 
 
@@ -61,7 +62,8 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
     SvgimageComponent,
     StudentdataComponent,
     BookdatasComponent,
-    AddemployeeComponent
+    AddemployeeComponent,
+    UpdateempComponent
   ],
   imports: [
     BrowserModule,

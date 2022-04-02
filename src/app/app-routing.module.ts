@@ -14,6 +14,7 @@ import { ScreencardComponent } from './screencard/screencard.component';
 import { ScreentwoComponent } from './screentwo/screentwo.component';
 import { StudentdataComponent } from './studentdata/studentdata.component';
 import { SvgimageComponent } from './svgimage/svgimage.component';
+import { UpdateempComponent } from './updateemp/updateemp.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path:'svgimg',component:SvgimageComponent},
   {path: 'studentdata',component:StudentdataComponent},
   {path: 'bookdatas' ,component:BookdatasComponent},
-  {path:'Add',component:AddemployeeComponent}                                    
+  {path:'Add',component:AddemployeeComponent},
+  {path:'Up',component:UpdateempComponent}                                   
 
 ];
 

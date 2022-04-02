@@ -1,17 +1,20 @@
-<form class="btn-fm" [formGroup]= "Employee" novalidate>
+<form class="btn-fm"  [formGroup]= "reactiveForm " novalidate>
     <h2 class="btn-hd">employee details</h2>
-  
+    <br>
+    <label for="First Name">Employee: </label>
+    <input id="Employee" type="text" formControlName="employee_id">
+  <br>
     <label for="First Name">First Name: </label>
-    <input id="First Name" type="text" formControlName="First_Name">
+    <input id="First Name" type="text" formControlName="first_name">
   <br>
     <label for="Last Name">Last Name: </label>
-    <input id="Last Name" type="text" formControlName="Last_Name">
+    <input id="Last Name" type="text" formControlName="last_name">
   <br>
     <label for="Email">Email: </label>
-    <input id="Email" type="text" formControlName="Email">
+    <input id="Email" type="text" formControlName="email">
   <br>
     <label for="Phone_Number">Phone_Number: </label>
-    <input id="Phone_Number" type="number" formControlName="Phone_Number">
+    <input id="Phone_Number" type="number" formControlName="phone_number">
   <br>
     <label for="hire_date">hire_date: </label>
     <input id="hire_date" type="date" formControlName="hire_date">
@@ -23,6 +26,8 @@
     <label for="salary">salary: </label>
     <input id="salary" type="number" formControlName="salary">
  <br>
-    <button type="button" (click)="Add()"  class="btn-ad">Add Profile</button>
+ <a routerLink="/bookdatas"> <button type="button"  (click)="Up()" class="btn-ad">Update Profile</button></a>
     
 </form>
+
+

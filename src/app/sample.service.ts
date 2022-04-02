@@ -19,6 +19,12 @@ export class SampleService {
   Employee(val:any){
     return this.http.post('http://localhost/libraryjson/addemp.php', val);
   }
+  deleteEmployeedata(val:any){
+    return this.http.post('http://localhost/libraryjson/deletemp.php', val);
+  }
+  reactiveForm(val:any){
+    return this.http.post('http://localhost/libraryjson/updateemp.php', val);
 }
 
+}
 
