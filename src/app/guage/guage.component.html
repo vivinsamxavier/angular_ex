@@ -1,0 +1,46 @@
+<h3 class="head">SHOP FLOOR MACHINES : Energy KPI </h3>
+    <div fxLayout="row wrap" fxLayoutGap="4px" >
+        <div fxFlex="22.8"  *ngFor="let cnc of circular" >
+        
+            <mat-card class="card" >
+            <mat-card-title class="length">
+                {{cnc.name}}   
+            </mat-card-title>
+            <mat-card-content>
+                <ejs-circulargauge style='display:block; height: 170px;'>
+                    <e-axes>
+                        <e-axis minimum=0 radius='110%'[maximum]=cnc.reded startAngle=210 endAngle=150 
+                        [labelStyle]="labelStyle" [annotations]='cnc.kwt'>
+                            <e-pointers>
+                                <e-pointer [value]='cnc.kwt' radius='60%' pointerWidth=7 [cap]="cap" [needleTail]="tail">
+                                    <e-ranges>
+                                        <e-range [start]='cnc.greenst' [end]='cnc.greened' color='green'></e-range>
+                                        <e-range [start]='cnc.orangest' [end]='cnc.orangeed' color='orange'></e-range>
+                                        <e-range [start]='cnc.redst' [end]='cnc.reded' color='red'></e-range>
+                                    </e-ranges>
+                                    
+                                </e-pointer>
+                                <e-pointer [value]='cnc.kwt' radius='60%' pointerWidth=8 [needleTail]='tail' [cap]="pointerCap">
+                                </e-pointer>
+                                
+                            </e-pointers>
+                            <e-annotations >
+                                <e-annotation>
+                                    
+                                    </e-annotation>
+                                    </e-annotations>
+                        </e-axis>
+                    </e-axes>
+                </ejs-circulargauge> 
+            </mat-card-content>
+            <div class="kwt">
+                <span>{{cnc.kwt}} kW</span>
+            </div>
+            <div class="dt">
+            {{cnc.tdatetime}}
+           </div>
+           </mat-card>
+          </div>
+
+        </div>
+   

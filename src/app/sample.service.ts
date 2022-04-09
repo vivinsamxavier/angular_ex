@@ -25,6 +25,16 @@ export class SampleService {
   reactiveForm(val:any){
     return this.http.post('http://localhost/libraryjson/updateemp.php', val);
 }
+  gugaeData(){
+    return this.http.get('http://alensoft.in/cnh/CNH.php?option=shopFloor_d1');
+  }
+  box(){
+    return this.http.get('http://alensoft.in/cnh/CNH.php?option=shopFloor_d1');
+  }
+layout(){
+  return this.http.get('http://alensoft.in/cnh/CNH.php?option=shopFloor_d4');
+}
+
 
 }
 

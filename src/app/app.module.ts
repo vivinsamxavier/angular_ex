@@ -43,6 +43,9 @@ import { BookdatasComponent } from './bookdatas/bookdatas.component';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { UpdateempComponent } from './updateemp/updateemp.component';
+import { GuageComponent } from './guage/guage.component';
+import { ShopcardComponent } from './shopcard/shopcard.component';
+import { LayoutsComponent } from './layouts/layouts.component';
 
 
 
@@ -63,7 +66,10 @@ import { UpdateempComponent } from './updateemp/updateemp.component';
     StudentdataComponent,
     BookdatasComponent,
     AddemployeeComponent,
-    UpdateempComponent
+    UpdateempComponent,
+    GuageComponent,
+    ShopcardComponent,
+    LayoutsComponent
   ],
   imports: [
     BrowserModule,

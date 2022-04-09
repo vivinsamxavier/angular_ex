@@ -7,11 +7,14 @@ import { ExamplecircularComponent } from './examplecircular/examplecircular.comp
 import { ExampleschartsComponent } from './examplescharts/examplescharts.component';
 import { ExamplesgirdComponent } from './examplesgird/examplesgird.component';
 import { ExamplespieComponent } from './examplespie/examplespie.component';
+import { GuageComponent } from './guage/guage.component';
+import { LayoutsComponent } from './layouts/layouts.component';
 import { LoginComponent } from './login/login.component';
 import { LogintwoComponent } from './logintwo/logintwo.component';
 import { MultilineComponent } from './multiline/multiline.component';
 import { ScreencardComponent } from './screencard/screencard.component';
 import { ScreentwoComponent } from './screentwo/screentwo.component';
+import { ShopcardComponent } from './shopcard/shopcard.component';
 import { StudentdataComponent } from './studentdata/studentdata.component';
 import { SvgimageComponent } from './svgimage/svgimage.component';
 import { UpdateempComponent } from './updateemp/updateemp.component';
@@ -32,7 +35,10 @@ const routes: Routes = [
   {path: 'studentdata',component:StudentdataComponent},
   {path: 'bookdatas' ,component:BookdatasComponent},
   {path:'Add',component:AddemployeeComponent},
-  {path:'Up',component:UpdateempComponent}                                   
+  {path:'Up',component:UpdateempComponent},
+  {path:'gauge',component:GuageComponent},
+  {path:'shop',component:ShopcardComponent},
+  {path:'layout',component:LayoutsComponent}                                  
 
 ];
 

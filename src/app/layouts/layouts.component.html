@@ -1,0 +1,21 @@
+<h3 class="head">SHOP FLOOR MACHINES : Energy KPI </h3>
+    <div fxLayout="row wrap" fxLayoutGap="4px" >
+        <div fxFlex="30.8"  *ngFor="let cnc of chart " >
+        
+            <mat-card class="card" >
+            <mat-card-title class="length">
+             {{cnc.name}}
+            </mat-card-title>
+        <mat-card-content>
+                <ejs-chart  [primaryXAxis]='XAxis'
+                 [tooltip]='tooltip'  height="350" (pointRender)='pointRender($event,cnc?.data)'>
+                 <e-series-collection>
+                   <e-series [dataSource]='cnc?.data' type='Column' xName='x' yName='y'  [marker]='marker' ></e-series>
+                   <e-series [dataSource]='cnc?.data' type='Line' xName='x' yName='red_line_value'  [marker]='marker'fill="blue" ></e-series>
+               </e-series-collection>
+           </ejs-chart>                
+        </mat-card-content>
+        </mat-card>
+        </div>
+        </div>
+   

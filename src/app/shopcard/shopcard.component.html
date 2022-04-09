@@ -1,0 +1,43 @@
+<h3 class="head">SHOP FLOOR MACHINES : Energy KPI </h3>
+    <div fxLayout="row wrap" fxLayoutGap="4px" >
+        <div fxFlex="22.8"  *ngFor="let cnc of card" >
+        
+            <mat-card class="card" >
+            <mat-card-title class="length">
+                
+            </mat-card-title>
+            <mat-card-content>
+                <div fxLayout="row wrap" fxLayoutGap="10">
+                    <div fxFlex="60" >
+               <p>{{cnc.name}}</p>
+            </div>
+            <div fxFlex="30" >
+                <mat-chip-list>
+                    <mat-chip class="running" [ngStyle]="{'background-color': cnc.status_color }" >
+                        <mat-chip-avatar>
+                           <mat-icon>{{cnc.icon2}}</mat-icon>
+                        </mat-chip-avatar>{{cnc.status}}
+                    </mat-chip>
+                </mat-chip-list>
+               </div>
+                </div><br><br>
+                <div fxLayout="row wrap" fxLayoutGap="20">
+                    <div fxFlex="35">
+                        <img mat-card-image src="./assets/images/ups.png" alt="CNC Image">
+                    </div>
+                        <div class="jk" fxFlex="30">
+                        <p class="td">{{cnc.tdatetime}}</p>
+                        <p class="js"[ngStyle]="{'color': cnc.kwt_color }"><b style="color: black;">KW </b>{{cnc.kwt}}</p>
+                        <p class="jl"[ngStyle]="{'color': cnc.kwh_color }"><b style="color: black;">kwh </b>{{cnc.kwh}}</p>
+                    </div>
+                </div>
+        </mat-card-content>
+
+    </mat-card>
+</div>
+</div>
+
+            
+           
+        
+   
