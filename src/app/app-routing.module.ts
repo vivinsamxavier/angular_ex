@@ -15,13 +15,14 @@ import { MultilineComponent } from './multiline/multiline.component';
 import { ScreencardComponent } from './screencard/screencard.component';
 import { ScreentwoComponent } from './screentwo/screentwo.component';
 import { ShopcardComponent } from './shopcard/shopcard.component';
+import { SidebarbuttonComponent } from './sidebarbutton/sidebarbutton.component';
 import { StudentdataComponent } from './studentdata/studentdata.component';
 import { SvgimageComponent } from './svgimage/svgimage.component';
 import { UpdateempComponent } from './updateemp/updateemp.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
-  { path: 'login', component: LoginComponent },
+  {path: 'login', component: LoginComponent },
   { path: 'login2', component: LogintwoComponent },
   { path: 'bookview', component: BookviewComponent },
   { path: 'examplescharts', component: ExampleschartsComponent },
@@ -38,7 +39,19 @@ const routes: Routes = [
   {path:'Up',component:UpdateempComponent},
   {path:'gauge',component:GuageComponent},
   {path:'shop',component:ShopcardComponent},
-  {path:'layout',component:LayoutsComponent}                                  
+  {path:'layout',component:LayoutsComponent},
+  { path:'Sidebar',component:SidebarbuttonComponent,
+    children: [{
+      path:'gauge',component:GuageComponent,
+       
+  },{
+    path:'shop',component:ShopcardComponent,
+  },{
+    path:'layout',component:LayoutsComponent,
+  },{
+    path: 'login', component: LoginComponent
+  }]
+ },
 
 ];
 

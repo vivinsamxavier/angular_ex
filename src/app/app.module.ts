@@ -46,6 +46,9 @@ import { UpdateempComponent } from './updateemp/updateemp.component';
 import { GuageComponent } from './guage/guage.component';
 import { ShopcardComponent } from './shopcard/shopcard.component';
 import { LayoutsComponent } from './layouts/layouts.component';
+import { SidebarbuttonComponent } from './sidebarbutton/sidebarbutton.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
@@ -69,7 +72,9 @@ import { LayoutsComponent } from './layouts/layouts.component';
     UpdateempComponent,
     GuageComponent,
     ShopcardComponent,
-    LayoutsComponent
+    LayoutsComponent,
+    SidebarbuttonComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -94,7 +99,10 @@ import { LayoutsComponent } from './layouts/layouts.component';
     MatProgressBarModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    MatToolbarModule
+    
     
   ],    
     
