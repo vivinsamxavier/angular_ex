@@ -1,0 +1,123 @@
+<h2 >Synfuction bars and buttons</h2>
+    <div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutstart="center" >
+        <div fxFlex="30.8">
+    <mat-card >
+          <mat-card-content> 
+            <h1>DatePicker</h1>
+           <div class="control-section">
+           <div id="control_wrapper">
+        <ejs-datepicker #datepick></ejs-datepicker>
+           </div>
+           <h3>Select Value: {{datepick?.value}}</h3>
+            </div>
+            
+          </mat-card-content>
+          </mat-card>
+          </div>
+   
+
+          <div  fxFlex="30.8">
+            <mat-card >
+                <mat-card-content>
+                    <h1>DateRangePicker</h1>
+                    <div class="control-section">
+                        <div id="control_wrapper">
+                            <ejs-daterangepicker #dateRangepick></ejs-daterangepicker>
+                        </div>
+                        <h3>Select Value:{{dateRangepick?.value}}</h3>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+              
+    
+        <div  fxFlex="30.8">
+            <mat-card class="example-cardactive">
+                <mat-card-content>
+                    <h1>DateTimePicker</h1>
+                    <div class="control-section">
+                        <div id="control_wrapper">
+                            <ejs-datetimepicker #dateTimepick></ejs-datetimepicker>
+                        </div>
+                        <h3>Select Value:{{dateTimepick?.value}}</h3>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+              
+
+        <div  fxFlex="30.8">
+            <mat-card class="dropdown">
+                <mat-card-content>
+                    <h1>DropDown</h1>
+                    <div class="drop">
+                    <ejs-dropdownlist id='games' #dropdown [dataSource]='sportsData'   [fields]='fields' [placeholder]='waterMark' [popupHeight]='height' ></ejs-dropdownlist>
+                 
+                </div>
+                <h3>Select Value: {{dropdown?.value}} </h3>
+                </mat-card-content>
+            </mat-card>
+        </div>
+              
+        <div  fxFlex="30.8">
+            <mat-card class="dropdown">
+                <mat-card-content>
+                    <h1>MultilevelDown</h1>
+                    <div  class="control-section" style="height: 238px">
+       
+                        <div id='content'>
+                            <div class="control-styles">
+                            <h4> Default Mode</h4>
+                            <ejs-multiselect id='sample-list1' [dataSource]='sportsData'  #multiselect [mode]='default' [fields]='fields' [placeholder]='waterMark'></ejs-multiselect>
+                            </div>
+                        </div>
+                        
+                        <div class="control-styles">
+                            <h4>Box Mode</h4>
+                            <ejs-multiselect id='sample-list2' [dataSource]='sportsData' #multiselect1 [mode]='box' [fields]='fields' [placeholder]='waterMark'></ejs-multiselect>
+                        </div>
+                        
+                        <div class="control-styles">
+                            <h4>Delimiter Mode</h4>
+                            <ejs-multiselect id='sample-list3' [dataSource]='sportsData' #multiselect2 [mode]='delimiter' [fields]='fields' [placeholder]='waterMark'></ejs-multiselect>
+                        </div>
+                        
+                </div>
+                <h3>Select Value:{{multiselect?.value}}</h3>
+                <h3>Select Vlaue:{{multiselect1?.value}}</h3>
+                <h3>Select Value:{{multiselect2?.value}}</h3>
+                </mat-card-content>
+            </mat-card>
+        </div>
+              
+
+        <div  fxFlex="30.8">
+            <mat-card class="dropdown">
+                <mat-card-content >
+                    <h1>RadioButton</h1>
+                    <div class="control-section">
+                        <div class="radiobutton-control">
+        
+                            <h4>Select a payment method</h4>
+                            <div class="row">
+                                <ejs-radiobutton label="Credit/Debit card" name="payment" value="credit/debit"  [(ngModel)]='Radio' checked="true" ></ejs-radiobutton>
+                            </div>
+                            <div class="row">
+                                <ejs-radiobutton label="Net Banking" name="payment" value="netbanking" [(ngModel)]='Radio'></ejs-radiobutton>
+                            </div>
+                            <div class="row">
+                                <ejs-radiobutton label="Cash on Delivery" name="payment" value="cashondelivery"  [(ngModel)]='Radio'> </ejs-radiobutton>
+                            </div>
+                            <div class="row">
+                                <ejs-radiobutton label="Other Wallets" name="payment" value="others"     [(ngModel)]='Radio'></ejs-radiobutton>
+                            </div>
+                        </div>
+                        <h3>Select Value:{{Radio}}</h3>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+
+       
+      

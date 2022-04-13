@@ -49,8 +49,19 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { SidebarbuttonComponent } from './sidebarbutton/sidebarbutton.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { DatepickerbuttonComponent } from './datepickerbutton/datepickerbutton.component';
+
+import { DateRangePickerModule,DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 
+import { DropDownButtonModule, SplitButtonModule, ProgressButtonModule } from '@syncfusion/ej2-angular-splitbuttons';
+
+import { ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { DialogboxbuttonComponent } from './dialogboxbutton/dialogboxbutton.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +84,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     GuageComponent,
     ShopcardComponent,
     LayoutsComponent,
-    SidebarbuttonComponent
+    SidebarbuttonComponent,
+    DatepickerbuttonComponent,
+    DialogboxbuttonComponent,
+    
     
   ],
   imports: [
@@ -101,9 +115,19 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ReactiveFormsModule,
     FormsModule,
     MatSidenavModule,
-    MatToolbarModule
-    
-    
+    MatToolbarModule,
+    DatePickerModule,
+    DropDownListModule,
+    MultiSelectModule,
+    DateRangePickerModule,
+    DateTimePickerModule,
+    DropDownButtonModule, 
+    SplitButtonModule, 
+    ProgressButtonModule,
+    ButtonModule, 
+    CheckBoxModule,
+    RadioButtonModule, 
+    SwitchModule
   ],    
     
   providers: [ CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService,AreaSeriesService,ColumnSeriesService,StackingColumnSeriesService,PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService,

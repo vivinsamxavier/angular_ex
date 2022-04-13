@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { BookdatasComponent } from './bookdatas/bookdatas.component';
 import { BookviewComponent } from './bookview/bookview.component';
+import { DatepickerbuttonComponent } from './datepickerbutton/datepickerbutton.component';
 import { ExamplecircularComponent } from './examplecircular/examplecircular.component';
 import { ExampleschartsComponent } from './examplescharts/examplescharts.component';
 import { ExamplesgirdComponent } from './examplesgird/examplesgird.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path:'gauge',component:GuageComponent},
   {path:'shop',component:ShopcardComponent},
   {path:'layout',component:LayoutsComponent},
+ 
   { path:'Sidebar',component:SidebarbuttonComponent,
     children: [{
       path:'gauge',component:GuageComponent,
@@ -52,7 +54,7 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   }]
  },
-
+ {path:'date',component:DatepickerbuttonComponent}
 ];
 
 @NgModule({
