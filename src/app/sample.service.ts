@@ -34,7 +34,9 @@ export class SampleService {
 layout(){
   return this.http.get('http://alensoft.in/cnh/CNH.php?option=shopFloor_d4');
 }
-
+reactiveForm1(val:any){
+  return this.http.post('http://localhost/libraryjson/updateemp.php', val);
+}
 
 }
 

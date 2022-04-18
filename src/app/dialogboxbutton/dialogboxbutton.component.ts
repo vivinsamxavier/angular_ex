@@ -12,19 +12,19 @@ import { Router, ActivatedRoute } from '@angular/router';
 // Dialoge box
 export class DialogboxbuttonComponent implements OnInit {
    
-  public output:any;
+
   public data:any;
-  public Employeeadd: any;
-  public firstname:any;
-  public employeeid:any;
-  public lastname:any;
-  public email:any;
-  public phone_number:any;
-  public hire_date:any;
-  public designation:any;
-  public salary:any;
 
-
+  public Firstname:any;
+  public Employeeid:any;
+  public Lastname:any;
+  public Email:any;
+  public Phone_number:any;
+  public Hire_date:any;
+  public Designation:any;
+  public Salary:any;
+  public output:any;
+  public reactiveForm1:any;
   constructor(@Inject(MAT_DIALOG_DATA) public dialogData: any,public dialogRef: MatDialogRef<DialogboxbuttonComponent>,
     private sample:SampleService,private router: Router,private route: ActivatedRoute) { }
 
@@ -43,16 +43,27 @@ export class DialogboxbuttonComponent implements OnInit {
   ngOnInit(): void{
     
     console.log(this.dialogData);
-    this.employeeid = this.dialogData['data']['employee_id'];
-    this.firstname = this.dialogData['data']['first_name'];
-    this.lastname = this.dialogData['data']['last_name']; 
-    this.email = this.dialogData['data']['email']; 
-    this.phone_number = this.dialogData['data']['phone_number']; 
-    this.hire_date = this.dialogData['data']['hire_date'];  
-    this.designation = this.dialogData['data']['designation']; 
-    this.salary = this.dialogData['data']['salary'];  
+    this.Employeeid = this.dialogData['data']['employee_id'];
+    this.Firstname = this.dialogData['data']['first_name'];
+    this.Lastname = this.dialogData['data']['last_name']; 
+    this.Email = this.dialogData['data']['email']; 
+    this.Phone_number = this.dialogData['data']['phone_number']; 
+    this.Hire_date = this.dialogData['data']['hire_date'];  
+    this.Designation = this.dialogData['data']['designation']; 
+    this.Salary = this.dialogData['data']['salary'];  
   }
+  
+  Up(){
+    this.output = this.reactiveForm.value;
+    console.log(this.output);
+    this.sample.reactiveForm1(this.output).subscribe((data: any)=>{
+    console.log(data);
+    this.dialogRef.close();
 
+      
+    });
+
+  }
 
   
   
