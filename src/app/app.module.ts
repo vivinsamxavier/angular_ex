@@ -62,6 +62,7 @@ import { DropDownButtonModule, SplitButtonModule, ProgressButtonModule } from '@
 
 import { ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { DialogboxbuttonComponent } from './dialogboxbutton/dialogboxbutton.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -127,7 +128,8 @@ import { DialogboxbuttonComponent } from './dialogboxbutton/dialogboxbutton.comp
     ButtonModule, 
     CheckBoxModule,
     RadioButtonModule, 
-    SwitchModule
+    SwitchModule,
+    MatDialogModule
   ],    
     
   providers: [ CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService,AreaSeriesService,ColumnSeriesService,StackingColumnSeriesService,PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService,

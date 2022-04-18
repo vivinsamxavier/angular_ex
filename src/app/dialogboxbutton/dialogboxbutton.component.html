@@ -1,1 +1,47 @@
-<p>dialogboxbutton works!</p>
+<form class="btn-fm"   [formGroup]= "reactiveForm " novalidate>
+  <h2 class="btn-hd">employee details</h2>
+  <br>
+  <label for="First Name">Employee: </label>
+  <input id="Employee" type="text" formControlName="employee_id" [(ngModel)]="employeeid">
+<br>
+    <label for="First Name">First Name: </label>
+    <input id="First Name" type="text" formControlName="first_name" [(ngModel)]="firstname">
+  <br>
+    <label for="Last Name">Last Name: </label>
+    <input id="Last Name" type="text" formControlName="last_name" [(ngModel)]="lastname">
+  <br>
+    <label for="Email">Email: </label>
+    <input id="Email" type="text" formControlName="email" [(ngModel)]="email">
+  <br>
+    <label for="Phone_Number">Phone_Number: </label>
+    <input id="Phone_Number" type="number" formControlName="phone_number" [(ngModel)]="phone_number"  >
+  <br>
+    <label for="hire_date">hire_date: </label>
+    <input id="hire_date" type="date" formControlName="hire_date" [(ngModel)]="hire_date">
+
+  <br>
+    <label for="designation">designation: </label>
+    <input id="designation" type="text" formControlName="designation" [(ngModel)]="designation">
+  <br>
+    <label for="salary">salary: </label>
+    <input id="salary" type="number" formControlName="salary" [(ngModel)]="salary">
+ <br>
+ <a routerLink="/bookdatas"> <button type="button" (click)="onNoClick()" class="btn-ad" >close </button></a>
+    
+</form>
+
+
+
+
+<!-- <h1 mat-dialog-title>Employee Details {{data.name}}</h1>
+<div mat-dialog-content>
+  <p>What gana going to add</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite place</mat-label>
+    <input matInput [(ngModel)]="data.animal">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</div> -->

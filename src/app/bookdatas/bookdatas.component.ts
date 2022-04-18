@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { DialogboxbuttonComponent } from '../dialogboxbutton/dialogboxbutton.component';
 import { SampleService } from '../sample.service';
 
 @Component({
@@ -12,11 +14,29 @@ export class BookdatasComponent implements OnInit {
   public deleteEmployeedata:any;
   public Employeeadd:any;
   public output:any;
-  constructor(private sample:SampleService,private router: Router) { }
-
+  // Dialoge box
+  animal: any;
+  name: any;
+  constructor(private sample:SampleService,private router: Router,public dialog: MatDialog) { }
+    
   ngOnInit(): void {
   this.getData();
   }
+  // Dialoge box
+  openDialog(currentData:any): void {
+    const dialogRef = this.dialog.open(DialogboxbuttonComponent, {
+      width: '60%',
+      height:'50%',
+      data: {data:currentData},
+      
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.animal = result;
+    });
+  }
+
   getData(){
   this.sample.getEmployeedata().subscribe((data: any)=>{    
   this.Employeedata=data;
