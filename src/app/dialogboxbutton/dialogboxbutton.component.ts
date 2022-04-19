@@ -42,6 +42,8 @@ export class DialogboxbuttonComponent implements OnInit {
     })
   ngOnInit(): void{
     
+   
+
     console.log(this.dialogData);
     this.Employeeid = this.dialogData['data']['employee_id'];
     this.Firstname = this.dialogData['data']['first_name'];
@@ -60,8 +62,7 @@ export class DialogboxbuttonComponent implements OnInit {
     console.log(data);
     this.dialogRef.close();
 
-      
-    });
+      });
 
   }
 

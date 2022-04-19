@@ -25,8 +25,8 @@ export class BookdatasComponent implements OnInit {
   // Dialoge box
   openDialog(currentData:any): void {
     const dialogRef = this.dialog.open(DialogboxbuttonComponent, {
-      width: '60%',
-      height:'50%',
+      width: '68%',
+      height:'58%',
       data: {data:currentData},
       
     });

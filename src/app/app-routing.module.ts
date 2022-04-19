@@ -17,6 +17,7 @@ import { ScreencardComponent } from './screencard/screencard.component';
 import { ScreentwoComponent } from './screentwo/screentwo.component';
 import { ShopcardComponent } from './shopcard/shopcard.component';
 import { SidebarbuttonComponent } from './sidebarbutton/sidebarbutton.component';
+import { StructuralComponent } from './structural/structural.component';
 import { StudentdataComponent } from './studentdata/studentdata.component';
 import { SvgimageComponent } from './svgimage/svgimage.component';
 import { UpdateempComponent } from './updateemp/updateemp.component';
@@ -41,7 +42,7 @@ const routes: Routes = [
   {path:'gauge',component:GuageComponent},
   {path:'shop',component:ShopcardComponent},
   {path:'layout',component:LayoutsComponent},
- 
+  
   { path:'Sidebar',component:SidebarbuttonComponent,
     children: [{
       path:'gauge',component:GuageComponent,
@@ -54,7 +55,8 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   }]
  },
- {path:'date',component:DatepickerbuttonComponent}
+ {path:'date',component:DatepickerbuttonComponent},
+ {path:'str',component:StructuralComponent}
 ];
 
 @NgModule({

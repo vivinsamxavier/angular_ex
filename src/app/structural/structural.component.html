@@ -1,0 +1,118 @@
+<h2 >Structural Directives</h2>
+    <div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutstart="center" >
+        <div fxFlex="30.8">
+    <mat-card >
+          <mat-card-content> 
+            <h1>*ngIf</h1>
+           <div class="control-section">
+           <div id="control_wrapper">
+
+           </div>
+           <p>test works!</p> 
+           <div *ngIf="true">hai</div>
+           <div *ngIf="false">how are you</div>
+            
+            </div>
+            
+          </mat-card-content>
+          </mat-card>
+          </div>
+
+
+          <div fxFlex="30.8">
+            <mat-card >
+                  <mat-card-content> 
+                    <h1>*ngIf-else</h1>
+                   <div class="control-section">
+                   <div id="control_wrapper">
+        
+                   </div>
+                   <div *ngIf="false;else id_selector">
+                    This text will be hidden
+                    <h1 [ngStyle]="{'color':'#FF0000'}">
+                       Atandra
+                    </h1>
+                    </div>
+                    <ng-template #id_selector>
+                    This text will be displayed
+                    <h1 [ngStyle]="{'color':'#00FF00'}">
+                      
+                        karykard
+                    </h1>
+                    </ng-template>
+                    </div>
+                  </mat-card-content>
+                  </mat-card>
+                  </div>
+
+
+
+                  <div fxFlex="30.8">
+                    <mat-card >
+                          <mat-card-content> 
+                            <h1>*ngFor</h1>
+                           <div class="control-section">
+                           <div id="control_wrapper">
+                
+                           </div>
+                           
+                             <ul> 
+                             <li *ngFor="let l of list">
+                               {{l}} 
+                              </li>
+                             </ul>
+                            </div>
+                            
+                          </mat-card-content>
+                          </mat-card>
+                          </div>
+
+
+                          <div fxFlex="30.8">
+                            <mat-card >
+                                  <mat-card-content> 
+                                    <h1>*ngSwitch :</h1>
+                                   <div class="control-section">
+                                   <div id="control_wrapper">
+                        
+                                   </div>
+                                   
+                                   <ul [ngSwitch]="logInName"> 
+                                      <li *ngSwitchCase="'user'"> 
+                                         <p>User is logged in..</p> 
+                                      </li> 
+                                      <li *ngSwitchCase="'admin'"> 
+                                         <p>admin is logged in</p> 
+                                      </li> 
+                                      <li *ngSwitchDefault> 
+                                         <p>Please choose login name</p> 
+                                      </li> 
+                                   </ul>
+                                    </div>
+                                    
+                                  </mat-card-content>
+                                  </mat-card>
+                                  </div>
+
+                                  <div fxFlex="30.8">
+                                    <mat-card >
+                                          <mat-card-content> 
+                                            <h1>*ngStyle :</h1>
+                                           <div class="control-section">
+                                           <div id="control_wrapper">
+                                
+                                           </div>
+                                           <ul *ngFor="let person of people">
+                                               <p [ngStyle]="{'color': person.color}"> {{person.country}}</p>
+                                            <li [ngStyle]="{'color': getColor(person.country)}"> {{ person.name }} ({{ person.country }}) 
+                                            </li>
+                                          </ul>
+                                         
+                                            </div>
+                                            
+                                          </mat-card-content>
+                                          </mat-card>
+                                          </div>
+                                 
+
+

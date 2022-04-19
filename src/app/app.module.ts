@@ -63,6 +63,8 @@ import { DropDownButtonModule, SplitButtonModule, ProgressButtonModule } from '@
 import { ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { DialogboxbuttonComponent } from './dialogboxbutton/dialogboxbutton.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { StructuralComponent } from './structural/structural.component';
+import { UidateComponent } from './uidate/uidate.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +90,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     SidebarbuttonComponent,
     DatepickerbuttonComponent,
     DialogboxbuttonComponent,
+    StructuralComponent,
+    UidateComponent,
     
     
   ],

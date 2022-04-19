@@ -1,32 +1,37 @@
 <form class="btn-fm"   [formGroup]= "reactiveForm " novalidate>
-  <h2 class="btn-hd">employee details</h2>
-  <br>
+  <div >
+    <h2 class="btn-hd">employee details</h2>
+    <button class="card-control" mat-icon-button (click)="onNoClick()">
+    <mat-icon>close</mat-icon></button>
+  </div>
+  <mat-divider></mat-divider>
+
   <br>
     <label for="Employee">Employee Id: </label>
-    <input id="Employee" type="text" formControlName="employee_id"  [(ngModel)]="Employeeid" >
-  <br>
+    <input  id="Employee" type="text" formControlName="employee_id"  [readonly]="true"  [(ngModel)]="Employeeid"  >
+  <br><br>
     <label for="First Name">First Name: </label>
     <input id="First Name" type="text" formControlName="first_name" [(ngModel)]="Firstname">
-  <br>
+  <br><br>
     <label for="Last Name">Last Name: </label>
     <input id="Last Name" type="text" formControlName="last_name" [(ngModel)]="Lastname">
-  <br>
+  <br><br>
     <label for="Email">Email: </label>
     <input id="Email" type="text" formControlName="email" [(ngModel)]="Email">
-  <br>
+  <br><br>
     <label for="Phone_Number">Phone_Number: </label>
     <input id="Phone_Number" type="number" formControlName="phone_number" [(ngModel)]="Phone_number"  >
-  <br>
+  <br><br>
     <label for="hire_date">hire_date: </label>
     <input id="hire_date" type="date" formControlName="hire_date" [(ngModel)]="Hire_date">
 
-  <br>
+  <br><br>
     <label for="designation">designation: </label>
     <input id="designation" type="text" formControlName="designation" [(ngModel)]="Designation">
-  <br>
+  <br><br>
     <label for="salary">salary: </label>
     <input id="salary" type="number" formControlName="salary" [(ngModel)]="Salary">
- <br>
+ <br><br>
  <a routerLink="/bookdatas"> <button type="button"  (click)="Up()" class="btn-ad" >Update</button></a>
     
 </form>
