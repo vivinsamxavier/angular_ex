@@ -1,1 +1,104 @@
-<p>uidate works!</p>
+<h2 >Date&Times</h2>
+    <div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutstart="center" >
+        <div fxFlex="30.8">
+    <mat-card class="gap">
+          <mat-card-content> 
+            <h1>Curent Date</h1>
+           <div class="control-section">
+           <div id="control_wrapper">
+                       
+           </div>
+           {{curDate |  date:'dd-MMM-yyyy HH:mm'}}
+            
+           </div>
+            
+          </mat-card-content>
+          </mat-card>
+          </div>
+
+          <div fxFlex="30.8">
+            <mat-card class="gap">
+                  <mat-card-content> 
+                    <h1>Start&End date</h1>
+                   <div class="control-section">
+                   <div id="control_wrapper">
+        
+                   </div>
+                   
+                    {{startTime}}and {{endTime}}
+                   </div>
+                    
+                  </mat-card-content>
+                  </mat-card>
+                  </div>
+
+
+
+                  
+
+                  <div fxFlex="30.8">
+                    <mat-card class="gap">
+                          <mat-card-content> 
+                            <h1>yesterday date</h1>
+                           <div class="control-section">
+                           <div id="control_wrapper">
+                
+                           </div>
+                           
+                           {{Yesterday}}
+                            
+                           </div>
+                            
+                          </mat-card-content>
+                          </mat-card>
+                          </div>
+                
+                          <div fxFlex="30.8">
+                            <mat-card  class="gap">
+                                  <mat-card-content> 
+                                    <h1>Curent Month</h1>
+                                   <div class="control-section">
+                                   <div id="control_wrapper">
+                        
+                                   </div>
+                                  
+                                   {{curMonth}}
+                                   </div>
+                                    
+                                  </mat-card-content>
+                                  </mat-card>
+                                  </div>
+                        
+                                  <div fxFlex="30.8">
+                                    <mat-card  class="gap">
+                                          <mat-card-content> 
+                                            <h1>Tommorow's Date</h1>
+                                           <div class="control-section">
+                                           <div id="control_wrapper">
+                                
+                                           </div>
+                                           
+                                            {{Tommorows}}
+                                           </div>
+                                            
+                                          </mat-card-content>
+                                          </mat-card>
+                                          </div>
+
+
+                                          <div fxFlex="30.8">
+                                            
+                                            <mat-card  class="gap">
+                                                  <mat-card-content> 
+                                                    <h1>Now Date</h1>
+                                                   <div class="control-section">
+                                                   <div id="control_wrapper">
+                                        
+                                                   </div>
+                                                   
+                                                    {{Nowdate}}
+                                                   </div>
+                                                    
+                                                  </mat-card-content>
+                                                  </mat-card>
+                                                  </div>

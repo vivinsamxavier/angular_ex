@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { RadioButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { DatePickerComponent, DateRangePickerComponent, DateTimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 import { DropDownListComponent, MultiSelectComponent } from '@syncfusion/ej2-angular-dropdowns';
 

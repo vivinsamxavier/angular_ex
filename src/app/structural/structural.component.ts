@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuralComponent implements OnInit {
   logInName = 'admin';
-  
+  // public curDate=new Date();
   getColor(country:any) { 
     return 'green';
   }

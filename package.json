@@ -29,6 +29,7 @@
     "@syncfusion/ej2-angular-grids": "^19.4.53",
     "@syncfusion/ej2-angular-progressbar": "^19.4.53",
     "@syncfusion/ej2-angular-splitbuttons": "^20.1.47",
+    "@syncfusion/ej2-base": "^20.1.50",
     "angular-2-daterangepicker": "^1.1.53",
     "ng-circle-progress": "^1.6.0",
     "rxjs": "~7.4.0",

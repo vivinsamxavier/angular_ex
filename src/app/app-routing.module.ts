@@ -20,6 +20,7 @@ import { SidebarbuttonComponent } from './sidebarbutton/sidebarbutton.component'
 import { StructuralComponent } from './structural/structural.component';
 import { StudentdataComponent } from './studentdata/studentdata.component';
 import { SvgimageComponent } from './svgimage/svgimage.component';
+import { UidateComponent } from './uidate/uidate.component';
 import { UpdateempComponent } from './updateemp/updateemp.component';
 
 const routes: Routes = [
@@ -56,7 +57,8 @@ const routes: Routes = [
   }]
  },
  {path:'date',component:DatepickerbuttonComponent},
- {path:'str',component:StructuralComponent}
+ {path:'str',component:StructuralComponent},
+ {path:'ui',component:UidateComponent}
 ];
 
 @NgModule({
